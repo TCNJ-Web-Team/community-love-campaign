@@ -9,7 +9,23 @@
     "preview": "astro preview",
     "astro": "astro"
   },
-  "dependencies": {
-    "astro": "^3.5.3"
+    "dependencies": {
+    "@astrojs/react": "^3.0.4",
+    "@fontsource/domine": "^5.0.15",
+    "@fontsource/open-sans": "^5.0.17",
+    "@fontsource/raleway": "^5.0.15",
+    "@types/react": "^18.2.32",
+    "@types/react-dom": "^18.2.14",
+    "@vidstack/player": "^1.6.5",
+    "@vidstack/player-react": "^1.6.5",
+    "astro": "^3.5.3",
+    "framer-motion": "^10.16.4",
+    "lit": "^2.8.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-parallax": "^3.5.1",
+    "sass": "^1.69.4",
+    "swiper": "^11.0.3"
   }
+
 }
