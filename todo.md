@@ -7,6 +7,7 @@
 * [ ] Animate logos
       _ [ ] Add Social Media Images
       _ [ ] Code give homepage banner
+      change button hover to off white style
 
 - [x] ~~_Style links in contact area_~~ [2023-11-08]
 - [x] ~~_Add content for scholarship accordion_~~ [2023-11-08]
