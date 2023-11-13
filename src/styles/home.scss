@@ -57,7 +57,7 @@ header {
   display: flex;
   flex-direction: row;
   padding: 0 25px;
-  width: calc(100% - 100px);
+  width: calc(100% - 115px);
   justify-content: space-between;
   align-items: center;
   height: 115px;
@@ -86,6 +86,9 @@ header {
       background-position: center;
     }
   }
+}
+header {
+  height: 75px;
 }
 .button-link {
   font-family: $raleway;
@@ -280,7 +283,7 @@ header {
 }
 .banner {
   background-color: $dark-blue;
-  width: calc(100% - 50px);
+  width: calc(100% - 75px);
   margin: 0 auto;
   .wrapper {
     display: flex;
@@ -341,7 +344,7 @@ footer {
     color: $dark-blue;
   }
   hr {
-    width: 100%;
+    width: calc(100% - 25px);
     height: 1px;
     // background: transparent;
     display: block;
@@ -370,11 +373,12 @@ footer {
     // background-repeat: no-repeat;
 
     #hero-image {
-      width: calc(100% - 100px);
+      width: calc(100% - 50px);
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 17.5vw;
       // margin-bottom: 34.5vw;
+      max-width: none;
     }
     #hero-bg {
       position: absolute;
@@ -405,9 +409,6 @@ footer {
     #banner {
       top: 31.5vw; /* Adjust the scaling factor as needed */
     }
-  }
-  header {
-    height: 75px;
   }
 }
 @media screen and (max-width: 1400px) {
