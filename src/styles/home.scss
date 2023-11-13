@@ -44,7 +44,8 @@ h3 {
 p {
   font-family: $raleway;
   font-weight: 400;
-  font-size: 19px;
+  // font-size: 19px;
+  font-size: 20px;
   line-height: 40px;
   text-align: left;
   color: #000;
@@ -56,7 +57,7 @@ header {
   display: flex;
   flex-direction: row;
   padding: 0 25px;
-  width: calc(100% - 100px);
+  width: calc(100% - 115px);
   justify-content: space-between;
   align-items: center;
   height: 115px;
@@ -86,10 +87,14 @@ header {
     }
   }
 }
+header {
+  height: 75px;
+}
 .button-link {
   font-family: $raleway;
   font-weight: 600;
-  font-size: 20px;
+  // font-size: 20px;
+  font-size: 18px;
   line-height: 30px;
   text-align: center;
   color: #fff;
@@ -116,7 +121,8 @@ header {
   width: 100%;
   margin: 0 auto;
   &#tcnj-spirit {
-    margin-top: 175px;
+    // margin-top: 175px;
+    margin-top: 250px;
     display: flex;
     gap: 40px;
     flex-direction: row;
@@ -249,7 +255,28 @@ header {
     }
   }
 }
+.intro {
+  position: relative;
 
+  flex-direction: column;
+  align-items: center;
+  #hero-bg {
+    position: absolute;
+    top: 0;
+  }
+  #hero-image {
+    position: absolute;
+    top: 0;
+  }
+  #banner {
+    position: relative;
+    margin-top: 31.5vw;
+    top: 0;
+    #inner-banner {
+      padding-bottom: 0 !important;
+    }
+  }
+}
 #carousel {
   padding-bottom: 200px;
   .swiper-slide {
@@ -266,15 +293,19 @@ header {
   p {
     font-family: $domine;
     font-weight: normal;
-    font-size: 23px;
-    line-height: 40px;
+    // font-size: 23px;
+    // line-height: 40px;
+    line-height: 37px;
+    text-align: center;
+    margin-bottom: 75px;
+    margin-top: 35px;
     text-align: center;
     color: #000;
   }
 }
 .banner {
   background-color: $dark-blue;
-  width: calc(100% - 50px);
+  width: calc(100% - 75px);
   margin: 0 auto;
   .wrapper {
     display: flex;
@@ -295,8 +326,8 @@ header {
     p {
       font-family: $domine;
       font-weight: 400;
-      font-size: 23px;
-      line-height: 40px;
+      font-size: 20px;
+      line-height: 37px;
       text-align: center;
       color: $off-white;
       max-width: 1050px;
@@ -304,7 +335,7 @@ header {
     .button-link {
       background-color: $off-white;
       color: $dark-blue;
-      margin: 75px 0;
+      margin: 50px 0 0;
       &:hover,
       &:focus {
         color: $off-white;
@@ -335,7 +366,7 @@ footer {
     color: $dark-blue;
   }
   hr {
-    width: 100%;
+    width: calc(100% - 25px);
     height: 1px;
     // background: transparent;
     display: block;
@@ -364,11 +395,12 @@ footer {
     // background-repeat: no-repeat;
 
     #hero-image {
-      width: calc(100% - 100px);
+      width: calc(100% - 50px);
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 17.5vw;
       // margin-bottom: 34.5vw;
+      max-width: none;
     }
     #hero-bg {
       position: absolute;
@@ -378,7 +410,8 @@ footer {
       object-fit: inherit;
     }
     #banner {
-      top: 33.5vw; /* Adjust the scaling factor as needed */
+      // top: 33.5vw; /* Adjust the scaling factor as needed */
+      top: 0; /* Adjust the scaling factor as needed */
     }
   }
 }
@@ -397,11 +430,8 @@ footer {
       margin-bottom: 32.5vw;
     }
     #banner {
-      top: 31.5vw; /* Adjust the scaling factor as needed */
+      // top: 31.5vw; /* Adjust the scaling factor as needed */
     }
-  }
-  header {
-    height: 75px;
   }
 }
 @media screen and (max-width: 1400px) {
@@ -496,28 +526,28 @@ footer {
   }
 }
 @media screen and (max-width: 1050px) {
-  .intro {
-    position: relative;
+  // .intro {
+  //   position: relative;
 
-    flex-direction: column;
-    align-items: center;
-    #hero-bg {
-      position: absolute;
-      top: 0;
-    }
-    #hero-image {
-      position: absolute;
-      top: 0;
-    }
-    #banner {
-      position: relative;
-      margin-top: 31.5vw;
-      top: 0;
-      #inner-banner {
-        padding-bottom: 0 !important;
-      }
-    }
-  }
+  //   flex-direction: column;
+  //   align-items: center;
+  //   #hero-bg {
+  //     position: absolute;
+  //     top: 0;
+  //   }
+  //   #hero-image {
+  //     position: absolute;
+  //     top: 0;
+  //   }
+  //   #banner {
+  //     position: relative;
+  //     margin-top: 31.5vw;
+  //     top: 0;
+  //     #inner-banner {
+  //       padding-bottom: 0 !important;
+  //     }
+  //   }
+  // }
   .wrapper {
     &#tcnj-spirit {
       flex-direction: column-reverse;
