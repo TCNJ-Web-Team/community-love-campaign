@@ -19,7 +19,7 @@
 }
 #logo {
   opacity: 0;
-  visibility: hidden;
+  // visibility: hidden;
   overflow: visible;
   width: 100%;
   height: auto;
@@ -27,8 +27,10 @@
 }
 #heart {
   // transform-origin: 50%;
+  opacity: 0;
   width: 100%;
   height: auto;
+  transform-origin: 50% 75%; // Set the transform origin to the horizontal center
 }
 line {
   /* safari needs 300 300 for stroke-dasharray instead of single 300 */
@@ -38,5 +40,64 @@ line {
   &#right-line {
     stroke-dasharray: -43.03px -43.03px;
     stroke-dashoffset: -43.03px;
+  }
+}
+
+@keyframes logoAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heartAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes lineAnimation {
+  0% {
+    stroke-dashoffset: 43.03px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes lineAnimationTwo {
+  0% {
+    stroke-dashoffset: -43.03px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+#logo {
+  animation: logoAnimation 0.75s ease-out 0.25s forwards;
+}
+
+#heart {
+  animation: heartAnimation 0.75s ease-out 1.75s forwards;
+}
+
+line {
+  animation: lineAnimation 0.75s ease-out 1s forwards;
+  &#right-line {
+    animation: lineAnimationTwo 0.75s ease-out 1s forwards;
   }
 }
