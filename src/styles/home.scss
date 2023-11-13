@@ -254,7 +254,28 @@ header {
     }
   }
 }
+.intro {
+  position: relative;
 
+  flex-direction: column;
+  align-items: center;
+  #hero-bg {
+    position: absolute;
+    top: 0;
+  }
+  #hero-image {
+    position: absolute;
+    top: 0;
+  }
+  #banner {
+    position: relative;
+    margin-top: 31.5vw;
+    top: 0;
+    #inner-banner {
+      padding-bottom: 0 !important;
+    }
+  }
+}
 #carousel {
   padding-bottom: 200px;
   .swiper-slide {
@@ -388,7 +409,8 @@ footer {
       object-fit: inherit;
     }
     #banner {
-      top: 33.5vw; /* Adjust the scaling factor as needed */
+      // top: 33.5vw; /* Adjust the scaling factor as needed */
+      top: 0; /* Adjust the scaling factor as needed */
     }
   }
 }
@@ -407,7 +429,7 @@ footer {
       margin-bottom: 32.5vw;
     }
     #banner {
-      top: 31.5vw; /* Adjust the scaling factor as needed */
+      // top: 31.5vw; /* Adjust the scaling factor as needed */
     }
   }
 }
@@ -503,28 +525,28 @@ footer {
   }
 }
 @media screen and (max-width: 1050px) {
-  .intro {
-    position: relative;
+  // .intro {
+  //   position: relative;
 
-    flex-direction: column;
-    align-items: center;
-    #hero-bg {
-      position: absolute;
-      top: 0;
-    }
-    #hero-image {
-      position: absolute;
-      top: 0;
-    }
-    #banner {
-      position: relative;
-      margin-top: 31.5vw;
-      top: 0;
-      #inner-banner {
-        padding-bottom: 0 !important;
-      }
-    }
-  }
+  //   flex-direction: column;
+  //   align-items: center;
+  //   #hero-bg {
+  //     position: absolute;
+  //     top: 0;
+  //   }
+  //   #hero-image {
+  //     position: absolute;
+  //     top: 0;
+  //   }
+  //   #banner {
+  //     position: relative;
+  //     margin-top: 31.5vw;
+  //     top: 0;
+  //     #inner-banner {
+  //       padding-bottom: 0 !important;
+  //     }
+  //   }
+  // }
   .wrapper {
     &#tcnj-spirit {
       flex-direction: column-reverse;
