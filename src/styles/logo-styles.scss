@@ -1,0 +1,42 @@
+.cls-1 {
+  fill: none;
+  stroke: #003d71;
+  stroke-miterlimit: 10;
+  stroke-width: 0.96px;
+}
+
+.cls-2 {
+  fill: #f6ba18;
+}
+
+.cls-2,
+.cls-3 {
+  stroke-width: 0px;
+}
+
+.cls-3 {
+  fill: #003d71;
+}
+#logo {
+  opacity: 0;
+  visibility: hidden;
+  overflow: visible;
+  width: 100%;
+  height: auto;
+  max-height: 225px;
+}
+#heart {
+  // transform-origin: 50%;
+  width: 100%;
+  height: auto;
+}
+line {
+  /* safari needs 300 300 for stroke-dasharray instead of single 300 */
+  stroke-dasharray: 43.03px 43.03px;
+  stroke-dashoffset: 43.03px;
+  stroke: dodgerblue;
+  &#right-line {
+    stroke-dasharray: -43.03px -43.03px;
+    stroke-dashoffset: -43.03px;
+  }
+}

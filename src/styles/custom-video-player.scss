@@ -1,0 +1,264 @@
+$scrubButtonColor: white;
+$trackColor: #606060;
+
+#play-pause-button {
+  // pointer-events: none;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
+}
+
+#play-pause-button,
+#mute-button,
+#caption-btn {
+  width: 125px;
+  height: 125px;
+  display: block;
+  position: absolute;
+  border: 0;
+  background-color: transparent;
+  // &.active {
+  //   opacity: 1;
+  // }
+  // &.hidden {
+  //   opacity: 0;
+  // }
+  &.active,
+  &.hidden {
+    opacity: 0;
+    transition: opacity 0.3s; /* You can adjust the duration (0.3s) as needed */
+  }
+
+  /* Styles for .active class when it's active */
+  &.active {
+    opacity: 1;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+#mute-button {
+  top: 50px;
+  right: 50px;
+  width: fit-content;
+  height: fit-content;
+}
+#caption-btn {
+  top: 50px;
+  left: 50px;
+  width: fit-content;
+  height: fit-content;
+  color: white;
+}
+.swiper-slide {
+  img {
+    cursor: pointer;
+  }
+}
+.video-wrCustomVideoer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //   height: 100vh;
+  position: relative;
+  cursor: pointer;
+}
+
+h1 {
+  color: white;
+}
+
+video {
+  width: 100%;
+}
+
+.video-wrapper {
+  width: 100%;
+  max-width: 700px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.video-wrapper:hover .controls {
+  transform: translateY(0%);
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: 30px;
+  bottom: 100px;
+  padding: 14px;
+  width: 100%;
+  max-width: 500px;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transform: translateY(150%);
+  transition: all 0.3s ease-in-out;
+}
+
+.video-wrCustomVideoer button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.video-wrCustomVideoer button i {
+  background-color: none;
+  color: white;
+  font-size: 30px;
+}
+
+// input[type="range"] {
+//   -webkit-appearance: none !important;
+//   background: rgba(255, 255, 255, 0.2);
+//   border-radius: 20px;
+//   height: 4px;
+//   width: 350px;
+// }
+
+// input[type="range"]::-webkit-slider-thumb {
+//   -webkit-appearance: none !important;
+//   cursor: pointer;
+//   height: 6px;
+// }
+
+// input[type="range"]::-moz-range-progress {
+//   background: white;
+// }
+// input[type="range"] {
+//   // -webkit-appearance: none !important;
+//   background: rgba(255, 255, 255, 0.2);
+//   border-radius: 20px;
+//   height: 4px;
+//   width: 350px;
+
+//   &::-webkit-slider-thumb {
+//     // -webkit-appearance: none !important;
+//     cursor: pointer;
+//     height: 6px;
+//     color: white;
+//     display: block;
+//   }
+
+//   &::-moz-range-progress {
+//     background: white;
+//   }
+// }
+
+/********** Range Input Styles **********/
+/*Range Reset*/
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 15rem;
+}
+
+/* Removes default focus */
+input[type="range"]:focus {
+  outline: none;
+}
+
+/***** Chrome, Safari, Opera and Edge Chromium styles *****/
+/* slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: $trackColor;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -8px; /* Centers thumb on the track */
+
+  /*custom styles*/
+  background-color: $scrubButtonColor;
+  height: 24px;
+  width: 24px;
+  border-radius: 12px;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+  border: 1px solid $trackColor;
+  outline: 3px solid $trackColor;
+  outline-offset: 0.125rem;
+}
+
+/******** Firefox styles ********/
+/* slider track */
+input[type="range"]::-moz-range-track {
+  background-color: $trackColor;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-moz-range-thumb {
+  border: none; /*Removes extra border that FF applies*/
+  border-radius: 0; /*Removes default border-radius that FF applies*/
+
+  /*custom styles*/
+  background-color: $scrubButtonColor;
+  height: 2rem;
+  width: 1rem;
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+  border: 1px solid $trackColor;
+  outline: 3px solid $trackColor;
+  outline-offset: 0.125rem;
+}
+
+.velocity {
+  appearance: none;
+  background: none;
+  color: white;
+  outline: none;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+}
+
+.mute-btn,
+.caption-btn {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.mute-btn i,
+.caption-btn i {
+  background-color: none;
+  color: white;
+  font-size: 20px;
+}
+@media screen and (max-width: 800px) {
+  #play-pause-button {
+    width: 20vw;
+    height: 20vw;
+  }
+  #mute-button {
+    top: 5vw;
+    right: 5vw;
+    width: 20px;
+    height: 20px;
+  }
+  .video-wrCustomVideoer button i {
+    font-size: 15px;
+  }
+}

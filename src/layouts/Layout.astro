@@ -1,0 +1,79 @@
+---
+import Scholarship from "../pages/scholarship.astro";
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+  scholarship?: boolean;
+}
+
+const {
+  title,
+  scholarship,
+  description = "The College of New Jersey has the opportunity to build a new indoor/outdoor structure – the TCNJ Community Hub – that will serve as a setting for community engagement, music and drama rehearsals, visiting and faculty lecturers, competition presentations, and performances.",
+  image = "https://brand.tcnj.edu/wp-content/uploads/sites/11/2016/03/site-brand-downloads-logo-horizontal-FINAL-546-160.png",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    {
+      !scholarship && (
+        <>
+          <link
+            rel="preload"
+            href="https://tcnj.edu/custom/campaigns/images/hero.jpg"
+            as="image"
+          />
+          <link
+            rel="preload"
+            href="https://tcnj.edu/custom/campaigns/images/walkthrough.png"
+            as="image"
+          />
+        </>
+      )
+    }
+    <link
+      rel="preload"
+      href="https://tcnj.edu/custom/campaigns/images/hero-bg.jpg"
+      as="image"
+    />
+    <link
+      rel="preload"
+      href="https://tcnj.edu/custom/campaigns/images/yellow-bg-small.jpg"
+      as="image"
+    />
+    {
+      scholarship && (
+        <>
+          <link
+            rel="preload"
+            href="https://tcnj.edu/custom/campaigns/images/hero-scholarship.jpg"
+            as="image"
+          />
+
+          <link
+            rel="preload"
+            href="https://tcnj.edu/custom/campaigns/images/group.png"
+            as="image"
+          />
+        </>
+      )
+    }
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+    <!-- <meta property="og:image" content={image} /> -->
+    <!-- <meta name="generator" content={Astro.generator} /> -->
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

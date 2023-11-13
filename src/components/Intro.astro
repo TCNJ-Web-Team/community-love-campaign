@@ -1,0 +1,67 @@
+---
+import { Image } from "astro:assets";
+// import heroImage from "../assets/hero.jpg";
+// import CommunityLogoAnimation from "./CommunityLogoAnimation";
+// import CommunityLogoAnimation from "./CommunityLogoAnimation";
+interface Props {
+  heading?: string;
+  body?: string;
+  buttonText?: string;
+  buttonLink?: string;
+  scholarship?: boolean;
+  heroImage?: string;
+}
+
+const { heading, body, buttonLink, buttonText, scholarship, heroImage } =
+  Astro.props;
+---
+
+<section class="intro">
+  <!-- <CommunityLogoAnimation client:load /> -->
+  <img
+    src="https://tcnj.edu/custom/campaigns/images/hero-bg.jpg"
+    id="hero-bg"
+    alt="Background yellow"
+  />
+  <!-- <img src="/hero.png" id="hero-image" alt="TCNJ Pavillion" /> -->
+  <img
+    src={"https://tcnj.edu/custom/campaigns/images/" + heroImage}
+    id="hero-image"
+    alt="TCNJ Pavillion"
+  />
+
+  <div id="banner">
+    <div id="inner-banner">
+      <!-- <CommunityLogoAnimation scholarship={scholarship} client:load /> -->
+      <!-- <h2>{heading}</h2> -->
+      <p>{body}</p>
+      {
+        buttonText && (
+          <a class="button-link" href={buttonLink}>
+            {buttonText}
+          </a>
+        )
+      }
+    </div>
+  </div>
+</section>
+<!-- <script>
+  // Define the function to update banner height
+  function updateBannerHeight() {
+    var heroImage = document.getElementById("hero-image");
+    var banner = document.getElementById("banner");
+
+    var heroImageHeight = heroImage.clientHeight - 460; // Get the current height of the hero image
+    banner.style.top = heroImageHeight + "px"; // Set the banner top position to match the hero image height
+  }
+
+  // Call the function on initial load
+  window.onload = function() {
+    updateBannerHeight();
+  };
+
+  // Call the function on resize
+  window.onresize = function() {
+    updateBannerHeight();
+  };
+</script> -->

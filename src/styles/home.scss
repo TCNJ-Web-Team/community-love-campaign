@@ -1,0 +1,748 @@
+$dark-blue: #293f6f;
+$off-white: #fffdf4;
+$domine: "Domine", sans-serif;
+$raleway: "Raleway", sans-serif;
+@keyframes fadeInAndSlide {
+  0% {
+    opacity: 0;
+    margin-left: 25px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    // margin-top: 25px;
+  }
+  100% {
+    // margin-top: 0px;
+    opacity: 1;
+  }
+}
+body {
+  background-color: $off-white;
+  margin: 0;
+}
+// main {
+// }
+h1,
+h2,
+h3 {
+  font-family: $domine;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 45px;
+  text-align: left;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-family: $raleway;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 40px;
+  text-align: left;
+  color: #000;
+  a {
+    color: $dark-blue;
+  }
+}
+header {
+  display: flex;
+  flex-direction: row;
+  padding: 0 25px;
+  width: calc(100% - 100px);
+  justify-content: space-between;
+  align-items: center;
+  height: 115px;
+  margin: 0 auto;
+  #arrow-link {
+    font-family: $raleway;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: left;
+    color: $dark-blue;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 28px;
+      height: 20px;
+      margin-left: 0.5em;
+      background-image: url(https://tcnj.edu/custom/campaigns/images/right-arrow.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+}
+.button-link {
+  font-family: $raleway;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  padding: 25px 45px;
+  max-width: calc(450px - 90px);
+  width: 100%;
+  background-color: $dark-blue;
+  justify-content: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid transparent;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: #fff;
+    color: $dark-blue;
+    border: 2px solid $dark-blue;
+  }
+}
+.wrapper {
+  max-width: 1130px;
+  width: 100%;
+  margin: 0 auto;
+  &#tcnj-spirit {
+    margin-top: 175px;
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+    overflow: visible;
+    padding-bottom: 275px;
+    h2 {
+      max-width: 540px;
+    }
+  }
+  .overlay-container {
+    overflow: visible;
+    width: 545px;
+    position: relative;
+    // max-width: 545px;
+    #shield-image {
+      width: inherit;
+      position: relative;
+      z-index: 2;
+    }
+    #yellow-bg {
+      position: absolute;
+      right: -321px;
+      bottom: -54px;
+      z-index: 1;
+      width: 784px;
+      height: auto;
+    }
+  }
+}
+#tcnj-logo {
+  height: 45px;
+  img {
+    height: inherit;
+  }
+}
+.intro {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: visible;
+  margin: 0 25px;
+  // background-image: url(/hero-bg.jpg);
+  // background-size: cover;
+  // background-size: 100% 857px;
+  // background-repeat: no-repeat;
+
+  #hero-image {
+    padding-top: 55px;
+    width: 100%;
+    height: auto;
+    max-width: 1770px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    // border-radius: 465px 0px 0px 0px;
+    // margin-bottom: 328px;
+    margin-bottom: 365px;
+    position: relative;
+    z-index: 11;
+
+    border-radius: 465px 0px 0px 0px;
+    /* background: url(...); */
+    // border: 1px solid rgba(0, 0, 0, 0);
+
+    /* background: url(...); */
+    // animation: fadeInAndSlide 1.25s ease forwards;
+    @media screen and (max-width: 2000px) {
+      border-radius: 24vw 0px 0px 0px;
+    }
+    // @media screen and (max-width: 1600px) {
+    //   border-radius: 365px 0px 0px 0px;
+    // }
+    // @media screen and (max-width: 1250px) {
+    //   border-radius: 265px 0px 0px 0px;
+    // }
+    // @media screen and (max-width: 1050px) {
+    //   border-radius: 165px 0px 0px 0px;
+    // }
+    // @media screen and (max-width: 850px) {
+    // }
+    @media screen and (max-width: 500px) {
+      border-radius: 130px 0px 0px 0px;
+    }
+    @media screen and (max-width: 400px) {
+      border-radius: 110px 0px 0px 0px;
+    }
+  }
+  #hero-bg {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 860px;
+    object-fit: cover;
+  }
+  #banner {
+    position: absolute;
+    top: 646px;
+    // top: calc((646px / 1433px) * 100);
+    // top: 45.0802512212142%;
+    z-index: 100;
+    // max-width: calc(1130px - 195px * 2);
+    max-width: 1130px;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    // height: 787px;
+    background: linear-gradient(rgba(255, 253, 244, 0.92) 0%, #fffdf4 100%);
+    animation: fadeIn 1.75s ease forwards;
+    #inner-banner {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      padding: 75px 195px;
+      align-items: center;
+      justify-content: center;
+      gap: 35px;
+    }
+    #svg-container {
+      max-width: 635px;
+      width: 100%;
+    }
+    p {
+      font-family: $domine;
+      font-weight: normal;
+      font-size: 25px;
+      line-height: 40px;
+      text-align: center;
+      color: #2e2e2e;
+      animation: fadeIn 1s ease forwards;
+    }
+  }
+}
+
+#carousel {
+  padding-bottom: 200px;
+  .swiper-slide {
+    .container {
+      width: 100%;
+    }
+  }
+  #carousel-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 100px 30px;
+  }
+  p {
+    font-family: $domine;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 40px;
+    text-align: center;
+    color: #000;
+  }
+}
+.banner {
+  background-color: $dark-blue;
+  width: calc(100% - 50px);
+  margin: 0 auto;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 125px 0;
+    color: white;
+    h2 {
+      font-family: $domine;
+      font-weight: 600;
+      font-size: 45px;
+      line-height: 35px;
+      text-align: center;
+      color: $off-white;
+      padding-bottom: 35px;
+    }
+    p {
+      font-family: $domine;
+      font-weight: 400;
+      font-size: 23px;
+      line-height: 40px;
+      text-align: center;
+      color: $off-white;
+      max-width: 1050px;
+    }
+    .button-link {
+      background-color: $off-white;
+      color: $dark-blue;
+      margin: 75px 0;
+      &:hover,
+      &:focus {
+        color: $off-white;
+        background-color: $dark-blue;
+        border: 2px solid $off-white;
+      }
+    }
+  }
+}
+
+footer {
+  width: calc(100% - 50px);
+  margin: 0 auto;
+  padding: 100px 0 125px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    max-width: 440px;
+    width: 80%;
+  }
+  p {
+    font-family: $domine;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 35px;
+    text-align: center;
+    color: $dark-blue;
+  }
+  hr {
+    width: 100%;
+    height: 1px;
+    // background: transparent;
+    display: block;
+    background-color: $dark-blue;
+    margin: 100px 0 35px;
+    border: none;
+  }
+  span {
+    margin-top: -40px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 54px;
+    // text-align: left;
+    color: $dark-blue;
+  }
+}
+@media screen and (max-width: 2000px) {
+  main {
+    overflow: hidden;
+  }
+  .intro {
+    // background-image: url(/hero-bg.jpg);
+    // background-size: cover;
+    // background-size: 100% 857px;
+    // background-repeat: no-repeat;
+
+    #hero-image {
+      width: calc(100% - 100px);
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 17.5vw;
+      // margin-bottom: 34.5vw;
+    }
+    #hero-bg {
+      position: absolute;
+      z-index: 10;
+      width: 100%;
+      height: auto;
+      object-fit: inherit;
+    }
+    #banner {
+      top: 33.5vw; /* Adjust the scaling factor as needed */
+    }
+  }
+}
+@media screen and (max-width: 1800px) {
+  .intro {
+    #hero-image {
+      // margin-bottom: 17.5vw;
+      margin-bottom: 24.5vw;
+    }
+  }
+}
+@media screen and (max-width: 1600px) {
+  .intro {
+    #hero-image {
+      // margin-bottom: 17.5vw;
+      margin-bottom: 32.5vw;
+    }
+    #banner {
+      top: 31.5vw; /* Adjust the scaling factor as needed */
+    }
+  }
+  header {
+    height: 75px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .intro {
+    #hero-image {
+      // margin-bottom: 17.5vw;
+      margin-bottom: 42.5vw;
+    }
+    #banner {
+      // padding: 0;
+      width: calc(100% - 200px);
+      // padding-left: 10%;
+      // padding-right: 10%;
+    }
+  }
+}
+@media screen and (max-width: 1250px) {
+  #logo {
+    width: 90%;
+  }
+  #tcnj-logo {
+    height: 45px;
+  }
+  .intro {
+    #banner {
+      // padding: 0;
+      // width: fit-content;
+      // padding-left: 5%;
+      // padding-right: 5%;
+      p {
+        font-size: 22px;
+      }
+      #inner-banner {
+        padding: 5vw 10vw;
+      }
+    }
+    #hero-image {
+      // margin-bottom: 17.5vw;
+      margin-bottom: 42.5vw;
+    }
+  }
+  .wrapper {
+    width: calc(100% - 200px);
+    .overlay-container {
+      overflow: visible;
+      width: 465px;
+      #yellow-bg {
+        width: 650px;
+        top: 150px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1100px) {
+  #logo {
+    width: 70%;
+  }
+  .intro {
+    #hero-image {
+      padding-top: 25px;
+    }
+    #banner {
+      width: calc(100% - 150px);
+      // padding-top: 50px;
+      // padding-bottom: 50px;
+      // width: 58%;
+      // padding-left: 10%;
+      // padding-right: 10%;
+      p {
+        font-size: clamp(16px, 2.5vw, 22px);
+        line-height: 35px;
+      }
+      #inner-banner {
+        gap: 20px;
+        padding: 7vw 10vw;
+      }
+    }
+    #hero-image {
+      width: calc(100% - 50px);
+    }
+  }
+  .wrapper {
+    // width: calc(100% - 200px);
+    .overlay-container {
+      width: 365px;
+      padding-top: 100px;
+      #yellow-bg {
+        width: 550px;
+        top: 200px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1050px) {
+  .intro {
+    position: relative;
+
+    flex-direction: column;
+    align-items: center;
+    #hero-bg {
+      position: absolute;
+      top: 0;
+    }
+    #hero-image {
+      position: absolute;
+      top: 0;
+    }
+    #banner {
+      position: relative;
+      margin-top: 31.5vw;
+      top: 0;
+      #inner-banner {
+        padding-bottom: 0 !important;
+      }
+    }
+  }
+  .wrapper {
+    &#tcnj-spirit {
+      flex-direction: column-reverse;
+      margin-top: 150px;
+      margin-bottom: 0px;
+      padding-bottom: 100px;
+      h2 {
+        max-width: none;
+      }
+      .text-container {
+        padding: 25px 50px 0;
+      }
+    }
+    &#tcnj-spirit,
+    &#carousel {
+      width: calc(100% - 100px);
+    }
+    &#carousel {
+      padding-top: 150px;
+    }
+    &#tcnj-spirit {
+      // width: 100%;
+      background-image: url("https://tcnj.edu/custom/campaigns/images/yellow-bg-small.jpg");
+      background-size: cover;
+      padding-left: 50px;
+      padding-right: 50px;
+      background-repeat: no-repeat;
+      // background-position-y: bottom;
+      background-position-x: 0;
+      background-position-y: 22vw;
+      .overlay-container #yellow-bg {
+        display: none !important;
+        opacity: 0 !important;
+      }
+    }
+    // width: calc(100% - 200px);
+    .overlay-container {
+      width: 100%;
+      padding-top: 0px;
+      #shield-image {
+        border-radius: 0 0 200px 0;
+      }
+      #yellow-bg {
+        width: 1250px;
+        top: 300px;
+        height: 75vw;
+      }
+    }
+    .text-container {
+      position: relative;
+      z-index: 100;
+    }
+  }
+}
+@media screen and (max-width: 850px) {
+  .wrapper {
+    width: calc(100% - 100px);
+    &#tcnj-spirit,
+    &#carousel {
+      padding-left: 25px;
+      padding-right: 25px;
+      width: calc(100% - 50px);
+    }
+  }
+  .banner {
+    width: 100%;
+  }
+  #opportunties {
+    width: calc(100% - 100px);
+    p {
+      font-size: clamp(16px, 2.5vw, 22px);
+      line-height: 35px;
+    }
+  }
+  #carousel #carousel-body {
+    padding: 15px 0px 30px;
+    p {
+      font-size: clamp(16px, 2.5vw, 22px);
+      line-height: 35px;
+    }
+  }
+  #naming-opps {
+    h2 {
+      font-size: clamp(16px, 2.5vw, 22px);
+      line-height: 35px;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  #logo {
+    width: 80%;
+  }
+  header {
+    width: calc(100% - 50px);
+    margin: 0 auto;
+  }
+  .intro {
+    margin: 0;
+    #banner {
+      width: calc(100% - 100px);
+    }
+    #hero-image {
+      padding-top: 25px;
+      width: calc(100% - 25px);
+    }
+  }
+  .button-link {
+    width: auto;
+  }
+  .wrapper .overlay-container #shield-image {
+    border-radius: 0 0 150px 0;
+  }
+}
+@media screen and (max-width: 650px) {
+  #tcnj-logo {
+    height: 35px;
+  }
+  #logo {
+    max-height: 135px;
+  }
+  .intro {
+    #banner {
+      width: calc(100% - 50px);
+      margin-top: 48.5vw;
+    }
+  }
+
+  .wrapper {
+    &#tcnj-spirit {
+      margin-top: 75px;
+      padding-bottom: 75px;
+      h2 {
+        font-size: 28px;
+        line-height: 40px;
+      }
+      .text-container {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+
+        p {
+          margin-bottom: 0;
+        }
+      }
+      .overlay-container #shield-image {
+        border-radius: 0 0 75px 0;
+      }
+    }
+    &#carousel {
+      padding-top: 75px;
+      padding-bottom: 75px;
+    }
+    &#opportunties {
+      width: calc(100% - 50px);
+
+      padding-top: 75px;
+      padding-bottom: 75px;
+      .button-link {
+        margin: 25px 0 25px 0;
+      }
+      h2 {
+        font-size: 36px;
+        line-height: 45px;
+      }
+    }
+  }
+  // .wrapper {
+  //   padding-top: 75px !important;
+  //   padding-bottom: 75px !important;
+  // }
+  header {
+    a#arrow-link {
+      font-size: 16px;
+    }
+  }
+  footer {
+    width: calc(100% - 25px);
+    padding: 75px 0;
+    p {
+      font-size: 18px;
+      line-height: 30px;
+    }
+    hr {
+      margin: 50px 0 35px;
+    }
+  }
+  .intro #banner p,
+  #carousel #carousel-body p,
+  #opportunties p {
+    font-size: 18px;
+  }
+  .intro #banner #inner-banner {
+    gap: 20px;
+    padding: 7vw 5vw;
+  }
+  header {
+    width: calc(100% - 35px);
+    padding: 0;
+    a#arrow-link {
+      font-style: 14px;
+      &:after {
+        height: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #tcnj-logo {
+    height: 30px;
+  }
+  header {
+    a#arrow-link {
+      font-style: 12px;
+      &:after {
+        height: 13px;
+        width: 13px;
+      }
+    }
+  }
+  .wrapper {
+    &#opportunties {
+      h2 {
+        line-height: 35px;
+      }
+    }
+  }
+}

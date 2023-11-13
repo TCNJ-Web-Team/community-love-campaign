@@ -1,0 +1,115 @@
+---
+import Intro from "../components/Intro.astro";
+import BodyContainer from "../components/BodyContainer";
+import Scroll from "../components/Test";
+import "../styles/home.scss";
+import Header from "../components/Header";
+import CarouselContainer from "../components/CarouselContainer";
+import VideoComponent from "../components/VideoComponent";
+import CustomVideo from "../components/CustomVideo";
+import Accodion from "../components/Accordion";
+
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer";
+import GiveBanner from "../components/GiveBanner";
+import "@fontsource/domine/400.css";
+import "@fontsource/domine/600.css";
+import "@fontsource/raleway/400.css";
+import "@fontsource/raleway/500.css";
+import "@fontsource/raleway/600.css";
+import "@fontsource/open-sans";
+---
+
+<link
+  href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+  rel="stylesheet"
+/>
+
+<Layout title="For the Love of Community">
+  <main>
+    <Header />
+    <Intro
+      body="The Pavilion will provide an ideal space in which the TCNJ community and others can gather for everything from musical and dramatic performances to lectures and debates to ceremonies and presentations. Its open, modern design will enable all kinds of interdisciplinary connections among learners, researchers, innovators, students, and others."
+      buttonText="Invest in Community"
+      buttonLink="#"
+      heroImage="hero.jpg"
+    />
+
+    <BodyContainer idName="tcnj-spirit" scholarship={false} client:load>
+      <h2>
+        A design that embodies collaboration, creativity, accessibility, and
+        inclusion.
+      </h2>
+      <p>
+        The Pavilion will integrate flexibility, sustainability, and efficient
+        space use while also prioritizing acoustics and performance technology.
+        Integral to its functionality is a retractable door that opens to a
+        covered, multipurpose outdoor seating area. Slated to be built in a
+        centralized location on campus, the Pavilion will host events year-round
+        and facilitate next-level partnerships: Think science and business
+        researchers joined by scholars, dancers, artists, and linguists to
+        explore their interdisciplinary and creative potential.
+      </p>
+    </BodyContainer>
+
+    <CarouselContainer
+      carouselImages={[
+        {
+          image: "https://tcnj.edu/custom/campaigns/images/pav-1-large.jpg",
+          alt: "Pavilion Rendering 1",
+        },
+        {
+          image: "https://tcnj.edu/custom/campaigns/images/pav-2-large.jpg",
+          alt: "Pavilion Rendering 2",
+        },
+        {
+          image: "https://tcnj.edu/custom/campaigns/images/pav-3-large.jpg",
+          alt: "Pavilion Rendering 3",
+        },
+      ]}
+      client:load
+    >
+      <div id="carousel-body">
+        <p>
+          The space will feature a retractable, garage-like door and materials
+          that blend with the environment while maintaining the signature look
+          and feel of TCNJ’s campus.
+        </p>
+        <a class="button-link">Download TCNJ Pavilion Campaign Overview</a>
+      </div>
+    </CarouselContainer>
+    <GiveBanner client:load>
+      <h2>Giving Opportunities</h2>
+      <p>
+        Please join the TCNJ community to help bring this creative vision to
+        life. Whether through an individual gift or a sponsorship, there are
+        numerous ways to lend your support to the creation of the Pavilion.
+      </p>
+
+      <p>
+        Naming opportunities will underwrite various aspects of programming
+        provided through the TCNJ Pavilion, including but not limited to
+        recurring programs and initiatives, student organizations’ use of the
+        space, lecture series and scholarly panels, visiting artists, and
+        scholar-in-residence fellowships.
+      </p>
+      <a class="button-link">Give Online</a>
+      <!-- <Accodion
+        client:load
+        idName="naming-opps"
+        header="View the full list of naming opportunities"
+        startOpen={false}
+      >
+        <p>Content here</p>
+      </Accodion> -->
+    </GiveBanner>
+    <Footer client:load>
+      <p id="contact-info" class="wrapper">
+        Contact us: <a href="mailto:tcnjfund@tcnj.edu"> tcnjfund@tcnj.edu</a>
+         or
+        <a href="tele:1-609-771-2218"> 609.771.2218</a> /
+        <a href="tele:1-800-347-9621"> 800.347.9621</a>
+      </p>
+    </Footer>
+  </main>
+</Layout>
