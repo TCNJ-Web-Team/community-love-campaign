@@ -119,7 +119,7 @@ const CarouselContainer = ({ carouselImages, children }) => {
       >
         <SwiperSlide>
           <img
-            src="https://tcnj.edu/custom/campaigns/images/video-1-large.jpg"
+            src="https://tcnj.edu/custom/campaigns/images/pav-video-final.jpg"
             alt="Pavilion Rendering 1"
           />
         </SwiperSlide>

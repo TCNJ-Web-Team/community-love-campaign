@@ -111,7 +111,7 @@ header {
   cursor: pointer;
   &:hover,
   &:focus {
-    background-color: #fff;
+    background-color: $off-white;
     color: $dark-blue;
     border: 2px solid $dark-blue;
   }
@@ -645,6 +645,13 @@ footer {
   }
   .wrapper {
     width: calc(100% - 100px);
+    .overlay-container {
+      img {
+        max-width: 388px;
+        margin: 0 auto;
+        display: block;
+      }
+    }
     &#tcnj-spirit {
       width: calc(100% - 40px);
       padding-left: 10px;
@@ -744,9 +751,6 @@ footer {
           line-height: 30px;
         }
       }
-      .overlay-container #shield-image {
-        border-radius: 0 0 75px 0;
-      }
     }
     &#carousel {
       padding-top: 50px;
@@ -774,6 +778,10 @@ footer {
   //   padding-top: 75px !important;
   //   padding-bottom: 75px !important;
   // }
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    font-size: 20px !important;
+  }
   header {
     a#arrow-link {
       font-size: 16px;
@@ -835,6 +843,11 @@ footer {
     &#opportunties {
       h2 {
         line-height: 35px;
+      }
+    }
+    &#tcnj-spirit {
+      .overlay-container #shield-image {
+        border-radius: 0 0 75px 0;
       }
     }
   }

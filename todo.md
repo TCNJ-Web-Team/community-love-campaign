@@ -1,13 +1,13 @@
 - [ ] Get TCNJ in svg form
 - [ ] Fix large desktop banner height
 
-* [ ] Update media querie
-* [ ] Add favicon
+* [x] ~~_Update media querie_~~ [2023-11-14]
+* [x] ~~_Add favicon_~~ [2023-11-14]
 * [ ] Code testimonials
 * [x] ~~_Animate logos_~~ [2023-11-14]
       _ [ ] Add Social Media Images
       _ [ ] Code give homepage banner
-      change button hover to off white style
+* [x] change button hover to off white style
 
 - [x] ~~_Style links in contact area_~~ [2023-11-08]
 - [x] ~~_Add content for scholarship accordion_~~ [2023-11-08]
