@@ -118,10 +118,7 @@ const CarouselContainer = ({ carouselImages, children }) => {
         className="bottomSwiper"
       >
         <SwiperSlide>
-          <img
-            src="https://tcnj.edu/custom/campaigns/images/pav-video-final.jpg"
-            alt="Pavilion Rendering 1"
-          />
+          <img src="./images/pav-video-final.jpg" alt="Pavilion Rendering 1" />
         </SwiperSlide>
         {carouselImages &&
           carouselImages.map((image, index) => {

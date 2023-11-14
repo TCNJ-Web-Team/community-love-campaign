@@ -63,7 +63,7 @@ const CustomVideo = () => {
           ref={videoElement}
           onTimeUpdate={handleOnTimeUpdate}
           onClick={togglePlay}
-          poster="https://tcnj.edu/custom/campaigns/images/pav-video-final.jpg"
+          poster="./images/pav-video-final.jpg"
           controls={falseElement}
           className={`video ${playerState.isPlaying ? "playing" : "stopped"}`}
           playsInline // Prevent fullscreen on modern browsers
@@ -94,15 +94,9 @@ const CustomVideo = () => {
           onTouchStart={handleTouchStart}
         >
           {!playerState.isPlaying ? (
-            <img
-              src="https://tcnj.edu/custom/campaigns/images/play-button.svg"
-              alt="Play"
-            />
+            <img src="./images/play-button.svg" alt="Play" />
           ) : (
-            <img
-              src="https://tcnj.edu/custom/campaigns/images/pause-button.svg"
-              alt="Pause"
-            />
+            <img src="./images/pause-button.svg" alt="Pause" />
           )}
         </button>
 

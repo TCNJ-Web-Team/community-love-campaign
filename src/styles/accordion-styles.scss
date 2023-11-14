@@ -58,7 +58,7 @@ $raleway: "Raleway", sans-serif;
         }
 
         .arrow {
-          content: "https://tcnj.edu/custom/campaigns/images/plus.svg";
+          content: "./images/plus.svg";
           display: inline-block;
           width: 10px;
           height: 10px;
@@ -69,7 +69,7 @@ $raleway: "Raleway", sans-serif;
         }
         &.active {
           .arrow {
-            content: "https://tcnj.edu/custom/campaigns/images/minus.svg";
+            content: "./images/minus.svg";
             // transform: rotate(180deg);
           }
         }

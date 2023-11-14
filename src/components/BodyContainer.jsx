@@ -5,25 +5,25 @@ export default function BodyContainer({ children, idName, scholarship }) {
   const imageSources = !scholarship
     ? [
         {
-          src: "https://tcnj.edu/custom/campaigns/images/walkthrough-mobile.jpg",
+          src: "./images/walkthrough-mobile.jpg",
           mediaQuery: "(max-width: 850px)",
         },
         {
-          src: "https://tcnj.edu/custom/campaigns/images/walkthrough-full.jpg",
+          src: "./images/walkthrough-full.jpg",
           mediaQuery: "(max-width: 1050px)",
         },
-        { src: "https://tcnj.edu/custom/campaigns/images/walkthrough.png" }, // Default source
+        { src: "./images/walkthrough.png" }, // Default source
       ]
     : [
         {
-          src: "https://tcnj.edu/custom/campaigns/images/group-mobile.jpg",
+          src: "./images/group-mobile.jpg",
           mediaQuery: "(max-width: 850px)",
         },
         {
-          src: "https://tcnj.edu/custom/campaigns/images/group-full.jpg",
+          src: "./images/group-full.jpg",
           mediaQuery: "(max-width: 1050px)",
         },
-        { src: "https://tcnj.edu/custom/campaigns/images/group.png" }, // Default source
+        { src: "./images/group.png" }, // Default source
       ];
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -99,11 +99,11 @@ export default function BodyContainer({ children, idName, scholarship }) {
           }}
           initial="hidden"
           animate={image1Controls}
-          transition={{ duration: 0.75, delay: 0.9 }}
+          transition={{ duration: 0.75, delay: 0.6 }}
         />
         {!isWindowBelow1050 && (
           <motion.img
-            src="https://tcnj.edu/custom/campaigns/images/yellow-bg-small.jpg"
+            src="./images/yellow-bg-small.jpg"
             alt="yellow background"
             id="yellow-bg"
             variants={{
@@ -112,7 +112,7 @@ export default function BodyContainer({ children, idName, scholarship }) {
             }}
             initial="hidden"
             animate={image2Controls}
-            transition={{ duration: 0.75, delay: 0.6 }}
+            transition={{ duration: 0.75, delay: 0.9 }}
           />
         )}
       </div>

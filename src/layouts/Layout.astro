@@ -22,43 +22,19 @@ const {
     {
       !scholarship && (
         <>
-          <link
-            rel="preload"
-            href="https://tcnj.edu/custom/campaigns/images/hero.jpg"
-            as="image"
-          />
-          <link
-            rel="preload"
-            href="https://tcnj.edu/custom/campaigns/images/walkthrough.png"
-            as="image"
-          />
+          <link rel="preload" href="./images/hero.jpg" as="image" />
+          <link rel="preload" href="./images/walkthrough.png" as="image" />
         </>
       )
     }
-    <link
-      rel="preload"
-      href="https://tcnj.edu/custom/campaigns/images/hero-bg.jpg"
-      as="image"
-    />
-    <link
-      rel="preload"
-      href="https://tcnj.edu/custom/campaigns/images/yellow-bg-small.jpg"
-      as="image"
-    />
+    <link rel="preload" href="./images/hero-bg.jpg" as="image" />
+    <link rel="preload" href="./images/yellow-bg-small.jpg" as="image" />
     {
       scholarship && (
         <>
-          <link
-            rel="preload"
-            href="https://tcnj.edu/custom/campaigns/images/hero-scholarship.jpg"
-            as="image"
-          />
+          <link rel="preload" href="./images/hero-scholarship.jpg" as="image" />
 
-          <link
-            rel="preload"
-            href="https://tcnj.edu/custom/campaigns/images/group.png"
-            as="image"
-          />
+          <link rel="preload" href="./images/group.png" as="image" />
         </>
       )
     }
@@ -72,10 +48,7 @@ const {
     <link rel="icon" type="image/x-icon" href="https://tcnj.edu/favicon.ico" />
     <meta name="robots" content="index, follow" />
 
-    <meta
-      property="og:image"
-      content={`https://tcnj.edu/custom/campaigns/images/` + image}
-    />
+    <meta property="og:image" content={`./images/` + image} />
     <!-- <meta name="generator" content={Astro.generator} /> -->
     <title>{title}</title>
   </head>
