@@ -2,20 +2,6 @@ import React, { useState, useRef, useEffect } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 
 export default function BodyContainer({ children, idName, scholarship }) {
-  // const imageSources = !scholarship [
-  //   {
-  //     src: "/walkthrough-full.jpg",
-  //     mediaQuery: "(max-width: 1050px)",
-  //   },
-  //   { src: "/walkthrough.png" }, // Default source
-  // ]  : [
-  //   {
-  //     src: "/walkthrough-full.jpg",
-  //     mediaQuery: "(max-width: 1050px)",
-  //   },
-  //   { src: "/walkthrough.png" }, // Default source
-  // ]
-  //   ;
   const imageSources = !scholarship
     ? [
         {
