@@ -15,115 +15,124 @@ $raleway: "Raleway", sans-serif;
 // 	color: #fff;
 // 	padding: 2px;
 // }
+.banner {
+  .wrapper {
+    .accordion {
+      // border: 1px solid #ccc;
+      // margin-bottom: 10px;
 
-.accordion {
-  // border: 1px solid #ccc;
-  // margin-bottom: 10px;
+      .accordion-header {
+        // background-color: #f1f1f1;
+        // padding: 10px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        font-size: 18px;
+        line-height: 55px;
+        margin-bottom: 0;
 
-  .accordion-header {
-    // background-color: #f1f1f1;
-    // padding: 10px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    font-size: 21px !important;
-    line-height: 35px;
-    margin-bottom: 0;
+        font-family: $raleway;
+        font-weight: 600;
 
-    font-family: $raleway;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 55px;
-    text-align: center;
-    color: $off-white;
-    text-transform: uppercase;
-    text-align: center;
-    display: block;
-    padding-bottom: 15px;
-    @media screen and (max-width: 650px) {
-      max-width: 400px;
-      margin-left: auto !important;
-      margin-right: auto !important;
-      display: block;
-      line-height: 35px;
-    }
-    @media screen and (max-width: 400px) {
-      max-width: 275px;
-    }
-    span {
-      text-decoration: underline;
-    }
-    .arrow {
-      text-decoration: none;
-    }
-
-    .arrow {
-      content: "+";
-      display: inline-block;
-      width: 10px;
-      height: 10px;
-      margin-left: 0.5em;
-      // background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='110' height='96' viewBox='0 0 110 96'%3E%3Cpath id='Polygon_1' data-name='Polygon 1' d='M55,0l55,96H0Z'/%3E%3C/svg%3E");
-      // background-repeat: no-repeat;
-      // background-size: contain;
-    }
-    &.active {
-      .arrow {
-        content: "-";
-        // transform: rotate(180deg);
-      }
-    }
-  }
-  &#school-scholarships {
-    .accordion-header {
-      margin: 0;
-      margin-top: 50px;
-    }
-    .accordion-content {
-      p {
-        padding: 0;
-        margin: 0;
-      }
-      .button-link {
-        margin: 25px auto 75px;
-      }
-    }
-  }
-  // .accordion-content {
-  //   // max-height: 0;
-  //   height: 0;
-  //   overflow: hidden;
-  //   // // transition: max-height 0.3s ease-in-out;
-  //   transition: all 0.3s ease-in-out;
-  //   // // background-color: #fff;
-  //   // padding: 0px;
-  //   // padding-left: 20px;
-  //   opacity: 0;
-  //   &.active {
-  //     height: auto;
-  //     // padding-bottom: 50px;
-  //     opacity: 1;
-  //   }
-  // }
-  .accordion-content {
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
-    p {
-      a {
+        text-align: center;
         color: $off-white;
-      }
-    }
-    .button-link {
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-    }
+        text-transform: uppercase;
+        text-align: center;
+        display: block;
+        padding-bottom: 15px;
+        @media screen and (max-width: 650px) {
+          max-width: 400px;
+          margin-left: auto !important;
+          margin-right: auto !important;
+          display: block;
+          line-height: 35px;
+        }
+        @media screen and (max-width: 400px) {
+          max-width: 275px;
+        }
+        span {
+          text-decoration: underline;
+        }
+        .arrow {
+          text-decoration: none;
+        }
 
-    &.active {
-      max-height: 1000px; /* Adjust this value to suit your content */
-      opacity: 1;
+        .arrow {
+          content: "https://tcnj.edu/custom/campaigns/images/plus.svg";
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          margin-left: 20px;
+          // background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='110' height='96' viewBox='0 0 110 96'%3E%3Cpath id='Polygon_1' data-name='Polygon 1' d='M55,0l55,96H0Z'/%3E%3C/svg%3E");
+          // background-repeat: no-repeat;
+          // background-size: contain;
+        }
+        &.active {
+          .arrow {
+            content: "https://tcnj.edu/custom/campaigns/images/minus.svg";
+            // transform: rotate(180deg);
+          }
+        }
+      }
+      &#school-scholarships {
+        .accordion-header {
+          margin: 0;
+          margin-top: 50px;
+        }
+        .accordion-content {
+          p {
+            padding: 0;
+            margin: 0;
+          }
+          .button-link {
+            margin: 25px auto 75px;
+          }
+        }
+      }
+      // .accordion-content {
+      //   // max-height: 0;
+      //   height: 0;
+      //   overflow: hidden;
+      //   // // transition: max-height 0.3s ease-in-out;
+      //   transition: all 0.3s ease-in-out;
+      //   // // background-color: #fff;
+      //   // padding: 0px;
+      //   // padding-left: 20px;
+      //   opacity: 0;
+      //   &.active {
+      //     height: auto;
+      //     // padding-bottom: 50px;
+      //     opacity: 1;
+      //   }
+      // }
+      .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        p {
+          font-family: $raleway;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 35px;
+          text-align: center;
+          color: $off-white;
+
+          a {
+            color: $off-white;
+          }
+        }
+        .button-link {
+          text-align: center;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        &.active {
+          max-height: 1000px; /* Adjust this value to suit your content */
+          opacity: 1;
+        }
+      }
     }
   }
 }

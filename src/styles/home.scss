@@ -761,12 +761,34 @@ footer {
 
       padding-top: 75px;
       padding-bottom: 50px;
+
       .button-link {
-        margin: 25px 0 25px 0;
+        margin: 25px auto 0px auto !important;
       }
       h2 {
         font-size: 25px;
         line-height: 35px;
+        padding-bottom: 20px;
+        // &:nth-child(2) {
+        //   /* Styles for the second instance of .my-class */
+        //   margin-top: 0;
+        // }
+        &.accordion-header {
+          font-family: $raleway;
+          margin-top: 35px;
+          font-size: 15px;
+          line-height: 20px;
+          display: flex;
+          justify-content: center;
+          position: relative;
+          .arrow {
+            position: absolute;
+            right: 0;
+            width: 15px;
+            height: 15px;
+            margin-bottom: 5px;
+          }
+        }
       }
       p {
         font-size: 16px;

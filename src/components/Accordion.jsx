@@ -17,7 +17,20 @@ export default function Accodion({ children, header, idName, startOpen }) {
         onClick={onAccordionClick}
       >
         <span>{header}</span>
-        <span className="arrow">{open ? "-" : "+"}</span>
+        <span className="arrow">
+          {open ? (
+            <img
+              src="https://tcnj.edu/custom/campaigns/images/minus.svg"
+              alt="close"
+              style={{ marginBottom: "5px" }}
+            />
+          ) : (
+            <img
+              src="https://tcnj.edu/custom/campaigns/images/plus.svg"
+              alt="open"
+            />
+          )}
+        </span>
       </h2>
       <div
         className={`${
