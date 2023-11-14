@@ -60,3 +60,5 @@ Button change to font-size 15 with lineheight of 20
 Tablet photo
 Proporition Go on tablet XD
 vertical spacing
+
+Generic
