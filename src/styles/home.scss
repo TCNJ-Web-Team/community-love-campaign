@@ -562,8 +562,13 @@ footer {
       padding-bottom: 30px;
       h2 {
         max-width: none;
+        text-align: center;
+      }
+      p {
+        text-align: center;
       }
       .text-container {
+        text-align: center;
         padding: 25px 50px 0;
       }
     }
@@ -616,9 +621,24 @@ footer {
   }
 }
 @media screen and (max-width: 850px) {
+  .intro {
+    margin: 0 10px;
+    #hero-image {
+      width: calc(100% - 20px);
+    }
+    #banner {
+      width: calc(100% - 60px);
+    }
+  }
   .wrapper {
     width: calc(100% - 100px);
-    &#tcnj-spirit,
+    &#tcnj-spirit {
+      width: calc(100% - 40px);
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
     &#carousel {
       padding-left: 25px;
       padding-right: 25px;
@@ -626,7 +646,7 @@ footer {
     }
   }
   .banner {
-    width: 100%;
+    width: calc(100% - 20px);
   }
   #opportunties {
     width: calc(100% - 100px);
@@ -657,16 +677,16 @@ footer {
     width: calc(100% - 50px);
     margin: 0 auto;
   }
-  .intro {
-    margin: 0;
-    #banner {
-      width: calc(100% - 100px);
-    }
-    #hero-image {
-      padding-top: 25px;
-      width: calc(100% - 25px);
-    }
-  }
+  // .intro {
+  //   margin: 0;
+  //   #banner {
+  //     width: calc(100% - 100px);
+  //   }
+  //   #hero-image {
+  //     padding-top: 25px;
+  //     width: calc(100% - 25px);
+  //   }
+  // }
   .button-link {
     width: auto;
   }
@@ -681,12 +701,12 @@ footer {
   #logo {
     max-height: 135px;
   }
-  .intro {
-    #banner {
-      width: calc(100% - 50px);
-      margin-top: 48.5vw;
-    }
-  }
+  // .intro {
+  //   #banner {
+  //     width: calc(100% - 50px);
+  //     margin-top: 48.5vw;
+  //   }
+  // }
 
   .wrapper {
     &#tcnj-spirit {

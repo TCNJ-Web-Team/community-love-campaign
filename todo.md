@@ -4,7 +4,7 @@
 * [ ] Update media querie
 * [ ] Add favicon
 * [ ] Code testimonials
-* [ ] Animate logos
+* [x] ~~_Animate logos_~~ [2023-11-14]
       _ [ ] Add Social Media Images
       _ [ ] Code give homepage banner
       change button hover to off white style
