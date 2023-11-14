@@ -63,7 +63,7 @@ const CustomVideo = () => {
           ref={videoElement}
           onTimeUpdate={handleOnTimeUpdate}
           onClick={togglePlay}
-          poster="https://tcnj.edu/custom/campaigns/images/video-1-large.jpg"
+          poster="https://tcnj.edu/custom/campaigns/images/pav-video-final.jpg"
           controls={falseElement}
           className={`video ${playerState.isPlaying ? "playing" : "stopped"}`}
           playsInline // Prevent fullscreen on modern browsers

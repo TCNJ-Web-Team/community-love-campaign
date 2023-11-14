@@ -2,22 +2,12 @@ import React, { useState, useRef, useEffect } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 
 export default function BodyContainer({ children, idName, scholarship }) {
-  // const imageSources = !scholarship [
-  //   {
-  //     src: "/walkthrough-full.jpg",
-  //     mediaQuery: "(max-width: 1050px)",
-  //   },
-  //   { src: "/walkthrough.png" }, // Default source
-  // ]  : [
-  //   {
-  //     src: "/walkthrough-full.jpg",
-  //     mediaQuery: "(max-width: 1050px)",
-  //   },
-  //   { src: "/walkthrough.png" }, // Default source
-  // ]
-  //   ;
   const imageSources = !scholarship
     ? [
+        {
+          src: "https://tcnj.edu/custom/campaigns/images/walkthrough-mobile.jpg",
+          mediaQuery: "(max-width: 850px)",
+        },
         {
           src: "https://tcnj.edu/custom/campaigns/images/walkthrough-full.jpg",
           mediaQuery: "(max-width: 1050px)",
@@ -25,6 +15,10 @@ export default function BodyContainer({ children, idName, scholarship }) {
         { src: "https://tcnj.edu/custom/campaigns/images/walkthrough.png" }, // Default source
       ]
     : [
+        {
+          src: "https://tcnj.edu/custom/campaigns/images/group-mobile.jpg",
+          mediaQuery: "(max-width: 850px)",
+        },
         {
           src: "https://tcnj.edu/custom/campaigns/images/group-full.jpg",
           mediaQuery: "(max-width: 1050px)",

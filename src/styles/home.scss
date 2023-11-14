@@ -111,7 +111,7 @@ header {
   cursor: pointer;
   &:hover,
   &:focus {
-    background-color: #fff;
+    background-color: $off-white;
     color: $dark-blue;
     border: 2px solid $dark-blue;
   }
@@ -288,7 +288,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15px 100px 30px;
+    // padding: 15px 100px 30px;
+    padding: 15px 100px 0px;
   }
   p {
     font-family: $domine;
@@ -494,7 +495,7 @@ footer {
       padding-top: 25px;
     }
     #banner {
-      width: calc(100% - 150px);
+      width: calc(100% - 100px);
       // padding-top: 50px;
       // padding-bottom: 50px;
       // width: 58%;
@@ -548,25 +549,36 @@ footer {
   //     }
   //   }
   // }
+  .banner .wrapper {
+    padding: 100px 0 75px 0;
+  }
   .wrapper {
+    // padding: 75px 0;
+
     &#tcnj-spirit {
       flex-direction: column-reverse;
-      margin-top: 150px;
+      margin-top: 100px;
       margin-bottom: 0px;
-      padding-bottom: 100px;
+      padding-bottom: 30px;
       h2 {
         max-width: none;
+        text-align: center;
+      }
+      p {
+        text-align: center;
       }
       .text-container {
+        text-align: center;
         padding: 25px 50px 0;
       }
     }
     &#tcnj-spirit,
     &#carousel {
-      width: calc(100% - 100px);
+      width: calc(100% - 150px);
     }
     &#carousel {
-      padding-top: 150px;
+      padding-top: 75px;
+      padding-bottom: 75px;
     }
     &#tcnj-spirit {
       // width: 100%;
@@ -601,11 +613,52 @@ footer {
       z-index: 100;
     }
   }
+  footer {
+    padding: 75px 0;
+    hr {
+      margin: 75px 0 35px;
+    }
+  }
 }
 @media screen and (max-width: 850px) {
+  #logo {
+    max-height: 100px;
+    width: auto;
+  }
+  .intro {
+    margin: 0 10px;
+    #hero-image {
+      width: calc(100% - 20px);
+    }
+    #banner {
+      p {
+        font-size: 15px;
+        line-height: 25px;
+      }
+
+      width: calc(100% - 60px);
+      #inner-banner {
+        gap: 12px;
+        padding: 7vw 5vw;
+      }
+    }
+  }
   .wrapper {
     width: calc(100% - 100px);
-    &#tcnj-spirit,
+    .overlay-container {
+      img {
+        max-width: 388px;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+    &#tcnj-spirit {
+      width: calc(100% - 40px);
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
     &#carousel {
       padding-left: 25px;
       padding-right: 25px;
@@ -613,7 +666,7 @@ footer {
     }
   }
   .banner {
-    width: 100%;
+    width: calc(100% - 20px);
   }
   #opportunties {
     width: calc(100% - 100px);
@@ -623,10 +676,13 @@ footer {
     }
   }
   #carousel #carousel-body {
-    padding: 15px 0px 30px;
+    padding: 10px 0px 30px;
+
     p {
-      font-size: clamp(16px, 2.5vw, 22px);
-      line-height: 35px;
+      margin-top: 10px;
+      margin-bottom: 30px;
+      font-size: 16px;
+      line-height: 30px;
     }
   }
   #naming-opps {
@@ -637,25 +693,24 @@ footer {
   }
 }
 @media screen and (max-width: 800px) {
-  #logo {
-    width: 80%;
-  }
   header {
     width: calc(100% - 50px);
     margin: 0 auto;
   }
-  .intro {
-    margin: 0;
-    #banner {
-      width: calc(100% - 100px);
-    }
-    #hero-image {
-      padding-top: 25px;
-      width: calc(100% - 25px);
-    }
-  }
+  // .intro {
+  //   margin: 0;
+  //   #banner {
+  //     width: calc(100% - 100px);
+  //   }
+  //   #hero-image {
+  //     padding-top: 25px;
+  //     width: calc(100% - 25px);
+  //   }
+  // }
   .button-link {
     width: auto;
+    font-size: 12px;
+    line-height: 18px;
   }
   .wrapper .overlay-container #shield-image {
     border-radius: 0 0 150px 0;
@@ -665,52 +720,57 @@ footer {
   #tcnj-logo {
     height: 35px;
   }
-  #logo {
-    max-height: 135px;
-  }
-  .intro {
-    #banner {
-      width: calc(100% - 50px);
-      margin-top: 48.5vw;
-    }
-  }
+  // .swiper {
+  //   .swiper-slide {
+  //     margin-right: 15px !important;
+  //   }
+  // }
+  // .intro {
+  //   #banner {
+  //     width: calc(100% - 50px);
+  //     margin-top: 48.5vw;
+  //   }
+  // }
 
   .wrapper {
     &#tcnj-spirit {
-      margin-top: 75px;
-      padding-bottom: 75px;
+      margin-top: 50px;
+      padding-bottom: 50px;
       h2 {
-        font-size: 28px;
-        line-height: 40px;
+        font-size: 25px;
+        line-height: 35px;
       }
       .text-container {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 5vw;
+        padding-right: 5vw;
         padding-top: 0;
 
         p {
           margin-bottom: 0;
+          font-size: 16px;
+          line-height: 30px;
         }
-      }
-      .overlay-container #shield-image {
-        border-radius: 0 0 75px 0;
       }
     }
     &#carousel {
-      padding-top: 75px;
-      padding-bottom: 75px;
+      padding-top: 50px;
+      padding-bottom: 50px;
     }
     &#opportunties {
       width: calc(100% - 50px);
 
       padding-top: 75px;
-      padding-bottom: 75px;
+      padding-bottom: 50px;
       .button-link {
         margin: 25px 0 25px 0;
       }
       h2 {
-        font-size: 36px;
-        line-height: 45px;
+        font-size: 25px;
+        line-height: 35px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 30px;
       }
     }
   }
@@ -718,6 +778,10 @@ footer {
   //   padding-top: 75px !important;
   //   padding-bottom: 75px !important;
   // }
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    font-size: 20px !important;
+  }
   header {
     a#arrow-link {
       font-size: 16px;
@@ -725,29 +789,35 @@ footer {
   }
   footer {
     width: calc(100% - 25px);
-    padding: 75px 0;
+    padding: 50px 0;
     p {
-      font-size: 18px;
+      font-size: 16px;
       line-height: 30px;
     }
     hr {
       margin: 50px 0 35px;
     }
+    img {
+      width: 100%;
+    }
+    span {
+      margin-top: 0;
+    }
   }
-  .intro #banner p,
-  #carousel #carousel-body p,
-  #opportunties p {
-    font-size: 18px;
-  }
-  .intro #banner #inner-banner {
-    gap: 20px;
-    padding: 7vw 5vw;
-  }
+  // .intro #banner p,
+  // #carousel #carousel-body p,
+  // #opportunties p {
+  //   font-size: 18px;
+  // }
+  // .intro #banner #inner-banner {
+  //   gap: 20px;
+  //   padding: 7vw 5vw;
+  // }
   header {
-    width: calc(100% - 35px);
+    width: calc(100% - 40px);
     padding: 0;
     a#arrow-link {
-      font-style: 14px;
+      font-size: 14px;
       &:after {
         height: 15px;
       }
@@ -761,10 +831,11 @@ footer {
   }
   header {
     a#arrow-link {
-      font-style: 12px;
+      font-size: 12px;
       &:after {
         height: 13px;
-        width: 13px;
+        width: 16px;
+        margin-left: 13px;
       }
     }
   }
@@ -772,6 +843,11 @@ footer {
     &#opportunties {
       h2 {
         line-height: 35px;
+      }
+    }
+    &#tcnj-spirit {
+      .overlay-container #shield-image {
+        border-radius: 0 0 75px 0;
       }
     }
   }
