@@ -22,12 +22,20 @@ export default function BodyContainer({ children, idName, scholarship }) {
           src: "https://tcnj.edu/custom/campaigns/images/walkthrough-full.jpg",
           mediaQuery: "(max-width: 1050px)",
         },
+        {
+          src: "https://tcnj.edu/custom/campaigns/images/walkthrough-mobile.jpg",
+          mediaQuery: "(max-width: 850px)",
+        },
         { src: "https://tcnj.edu/custom/campaigns/images/walkthrough.png" }, // Default source
       ]
     : [
         {
           src: "https://tcnj.edu/custom/campaigns/images/group-full.jpg",
           mediaQuery: "(max-width: 1050px)",
+        },
+        {
+          src: "https://tcnj.edu/custom/campaigns/images/group-mobile.jpg",
+          mediaQuery: "(max-width: 850px)",
         },
         { src: "https://tcnj.edu/custom/campaigns/images/group.png" }, // Default source
       ];
