@@ -47,9 +47,6 @@ check font weights
 
 x- contact us bold chnage rest to regular
 x- check footer spacing
-update logo to svg
-
-Check spacing in accordions
 
 Mobile check spacing
 Animation photo module
@@ -63,3 +60,7 @@ Proporition Go on tablet XD
 vertical spacing
 
 Generic
+
+Final todo's
+Check spacing in accordions
+update logo to svg
