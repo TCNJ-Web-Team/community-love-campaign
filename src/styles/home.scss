@@ -514,7 +514,6 @@ footer {
       padding-top: 25px;
     }
     #banner {
-      width: calc(100% - 100px);
       // padding-top: 50px;
       // padding-bottom: 50px;
       // width: 58%;
@@ -894,6 +893,10 @@ footer {
   }
 }
 @media screen and (max-width: 850px) and (min-width: 650px) {
+  header #arrow-link::after {
+    width: 20px;
+    height: 12px;
+  }
   .intro {
     margin: 0 25px;
     #hero-image {
@@ -909,5 +912,46 @@ footer {
         line-height: 35px;
       }
     }
+  }
+  .wrapper {
+    &#tcnj-spirit {
+      width: calc(100% - 70px);
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &#carousel {
+      margin-left: auto;
+      margin-right: auto;
+
+      width: calc(100% - 75px);
+    }
+    .overlay-container {
+      width: calc(100% - 20px);
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  #carousel {
+    #carousel-body {
+      padding: 50px 0px 0px;
+      p {
+        font-size: 20px;
+        line-height: 35px;
+        text-align: center;
+        max-width: 655px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+  footer {
+    #contact-info {
+      max-width: 425px;
+    }
+  }
+
+  .button-link {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
