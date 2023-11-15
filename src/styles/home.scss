@@ -641,7 +641,7 @@ footer {
 }
 @media screen and (max-width: 850px) {
   #logo {
-    max-height: 100px;
+    max-height: 150px;
     width: auto;
   }
   .intro {
@@ -728,7 +728,7 @@ footer {
   // }
   .button-link {
     width: auto;
-    font-size: 12px;
+    font-size: 15px;
     line-height: 18px;
   }
   .wrapper .overlay-container #shield-image {
@@ -893,5 +893,21 @@ footer {
     }
   }
 }
-@media screen and (max-width: 850px) and (min-width: 650) {
+@media screen and (max-width: 850px) and (min-width: 650px) {
+  .intro {
+    margin: 0 25px;
+    #hero-image {
+      width: calc(100% - 60px);
+    }
+    #banner {
+      width: calc(100% - 120px);
+      #inner-banner {
+        gap: 35px;
+      }
+      p {
+        font-size: 20px;
+        line-height: 35px;
+      }
+    }
+  }
 }
