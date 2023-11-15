@@ -64,3 +64,4 @@ Generic
 Final todo's
 Check spacing in accordions
 update logo to svg
+add spacing to opportunities section on Scholarship section
