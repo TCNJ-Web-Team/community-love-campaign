@@ -1,0 +1,1 @@
+import{j as i}from"./jsx-runtime.b9e88e07.js";import"./index.03be2d59.js";import{m as r}from"./motion.28893b4b.js";const n=({children:t})=>i.jsx("div",{className:"banner",children:i.jsx(r.div,{className:"wrapper",id:"opportunties",initial:{opacity:0,y:25},whileInView:{opacity:1,y:0},transition:{duration:.65,delay:.25},viewport:{once:!0},children:t})});export{n as default};
