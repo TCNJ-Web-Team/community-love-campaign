@@ -65,3 +65,10 @@ Final todo's
 Check spacing in accordions
 update logo to svg
 add spacing to opportunities section on Scholarship section
+
+EAB Organic Search
+
+Cost calculator
+Financial Aid issues
+
+Copy on the homepage
