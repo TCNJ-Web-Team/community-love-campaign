@@ -666,7 +666,7 @@ footer {
     width: calc(100% - 100px);
     .overlay-container {
       img {
-        max-width: 388px;
+        // max-width: 388px;
         margin: 0 auto;
         display: block;
       }
@@ -892,4 +892,6 @@ footer {
       }
     }
   }
+}
+@media screen and (max-width: 850px) and (min-width: 650) {
 }

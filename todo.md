@@ -46,7 +46,7 @@ x- footer change to 20px
 check font weights
 
 x- contact us bold chnage rest to regular
-check footer spacing
+x- check footer spacing
 update logo to svg
 
 Check spacing in accordions

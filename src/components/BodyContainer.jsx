@@ -6,7 +6,7 @@ export default function BodyContainer({ children, idName, scholarship }) {
     ? [
         {
           src: "https://tcnj.edu/custom/campaigns/images/walkthrough-mobile.jpg",
-          mediaQuery: "(max-width: 850px)",
+          mediaQuery: "(max-width: 650px)",
         },
         {
           src: "https://tcnj.edu/custom/campaigns/images/walkthrough-full.jpg",
@@ -17,7 +17,7 @@ export default function BodyContainer({ children, idName, scholarship }) {
     : [
         {
           src: "https://tcnj.edu/custom/campaigns/images/group-mobile.jpg",
-          mediaQuery: "(max-width: 850px)",
+          mediaQuery: "(max-width: 650px)",
         },
         {
           src: "https://tcnj.edu/custom/campaigns/images/group-full.jpg",
