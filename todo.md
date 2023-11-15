@@ -26,29 +26,27 @@
 - [x] ~~_style accordion header a p spacing_~~ [2023-11-08]
 - [x] ~~_Style mobile video buttons_~~ [2023-11-08]
 - [x] ~~_Compress images_~~ [2023-11-13]
+      Change image paths back to "https://tcnj.edu/custom/campaigns/"
 
 Laurens Notes
 Support in header looks big
-Support tcnj to 18
-Check opacity gradient for intro box
+x- Support tcnj to 18
+x- Check opacity gradient for intro box
 
-Photo animate in before yellow
+x- Photo animate in before yellow
 
 above carousel spacing change to 250
 Add more photos?
 
 Look at xd for spacing
 
-Carousel max of 250 px spacing
+x- Carousel max of 250 px spacing
 
-footer change to 20px
+x- footer change to 20px
 check font weights
 
-contact us bold chnage rest to regular
-check footer spacing
-update logo to svg
-
-Check spacing in accordions
+x- contact us bold chnage rest to regular
+x- check footer spacing
 
 Mobile check spacing
 Animation photo module
@@ -62,3 +60,7 @@ Proporition Go on tablet XD
 vertical spacing
 
 Generic
+
+Final todo's
+Check spacing in accordions
+update logo to svg

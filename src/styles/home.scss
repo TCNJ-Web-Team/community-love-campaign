@@ -65,7 +65,7 @@ header {
   #arrow-link {
     font-family: $raleway;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 40px;
     text-align: left;
     color: $dark-blue;
@@ -87,9 +87,7 @@ header {
     }
   }
 }
-header {
-  height: 75px;
-}
+
 .button-link {
   font-family: $raleway;
   font-weight: 600;
@@ -229,7 +227,13 @@ header {
     width: 100%;
     margin: 0 auto;
     // height: 787px;
-    background: linear-gradient(rgba(255, 253, 244, 0.92) 0%, #fffdf4 100%);
+    background: #fffdf4;
+
+    background: linear-gradient(
+      rgba(255, 253, 244, 0.92) 0%,
+      rgba(255, 253, 244, 1) 50%
+    );
+
     animation: fadeIn 1.75s ease forwards;
     #inner-banner {
       text-align: center;
@@ -252,6 +256,9 @@ header {
       text-align: center;
       color: #2e2e2e;
       animation: fadeIn 1s ease forwards;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-bottom: 40px;
     }
   }
 }
@@ -298,7 +305,8 @@ header {
     // line-height: 40px;
     line-height: 37px;
     text-align: center;
-    margin-bottom: 75px;
+    // margin-bottom: 75px;
+    margin-bottom: 0px;
     margin-top: 35px;
     text-align: center;
     color: #000;
@@ -332,11 +340,13 @@ header {
       text-align: center;
       color: $off-white;
       max-width: 1050px;
+      margin-top: 0;
+      margin-bottom: 0;
     }
     .button-link {
       background-color: $off-white;
       color: $dark-blue;
-      margin: 50px 0 0;
+      margin: 75px 0 0;
       &:hover,
       &:focus {
         color: $off-white;
@@ -350,7 +360,7 @@ header {
 footer {
   width: calc(100% - 50px);
   margin: 0 auto;
-  padding: 100px 0 125px;
+  padding: 100px 0 75px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -360,11 +370,17 @@ footer {
   }
   p {
     font-family: $domine;
-    font-weight: 600;
-    font-size: 23px;
+    font-weight: 400;
+    font-size: 20px;
     line-height: 35px;
     text-align: center;
     color: $dark-blue;
+    a {
+      text-decoration: none;
+    }
+    strong {
+      font-weight: 600;
+    }
   }
   hr {
     width: calc(100% - 25px);
@@ -456,6 +472,9 @@ footer {
   #tcnj-logo {
     height: 45px;
   }
+  header {
+    height: 75px;
+  }
   .intro {
     #banner {
       // padding: 0;
@@ -495,7 +514,6 @@ footer {
       padding-top: 25px;
     }
     #banner {
-      width: calc(100% - 100px);
       // padding-top: 50px;
       // padding-bottom: 50px;
       // width: 58%;
@@ -622,7 +640,7 @@ footer {
 }
 @media screen and (max-width: 850px) {
   #logo {
-    max-height: 100px;
+    max-height: 150px;
     width: auto;
   }
   .intro {
@@ -647,7 +665,7 @@ footer {
     width: calc(100% - 100px);
     .overlay-container {
       img {
-        max-width: 388px;
+        // max-width: 388px;
         margin: 0 auto;
         display: block;
       }
@@ -709,14 +727,14 @@ footer {
   // }
   .button-link {
     width: auto;
-    font-size: 12px;
+    font-size: 15px;
     line-height: 18px;
   }
   .wrapper .overlay-container #shield-image {
     border-radius: 0 0 150px 0;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
   #tcnj-logo {
     height: 35px;
   }
@@ -872,5 +890,68 @@ footer {
         border-radius: 0 0 75px 0;
       }
     }
+  }
+}
+@media screen and (max-width: 850px) and (min-width: 600px) {
+  header #arrow-link::after {
+    width: 20px;
+    height: 12px;
+  }
+  .intro {
+    margin: 0 25px;
+    #hero-image {
+      width: calc(100% - 60px);
+    }
+    #banner {
+      width: calc(100% - 120px);
+      #inner-banner {
+        gap: 35px;
+      }
+      p {
+        font-size: 20px;
+        line-height: 35px;
+      }
+    }
+  }
+  .wrapper {
+    &#tcnj-spirit {
+      width: calc(100% - 70px);
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &#carousel {
+      margin-left: auto;
+      margin-right: auto;
+
+      width: calc(100% - 75px);
+    }
+    .overlay-container {
+      width: calc(100% - 20px);
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  #carousel {
+    #carousel-body {
+      padding: 50px 0px 0px;
+      p {
+        font-size: 20px;
+        line-height: 35px;
+        text-align: center;
+        max-width: 655px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+  footer {
+    #contact-info {
+      max-width: 425px;
+    }
+  }
+
+  .button-link {
+    font-size: 18px;
+    line-height: 30px;
   }
 }

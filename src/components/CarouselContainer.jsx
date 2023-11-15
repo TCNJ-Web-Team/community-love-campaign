@@ -42,6 +42,9 @@ const CarouselContainer = ({ carouselImages, children }) => {
   };
   useEffect(() => {
     const handleResize = () => {
+      if (window.innerWidth > 1050) {
+        setSpaceBetween(40); // Adjust as needed for smaller screens
+      }
       if (window.innerWidth <= 1050) {
         setSpaceBetween(25); // Adjust as needed for smaller screens
       }
@@ -49,7 +52,7 @@ const CarouselContainer = ({ carouselImages, children }) => {
       if (window.innerWidth <= 1050 && window.innerWidth <= 600) {
         setSpaceBetween(15); // Adjust as needed for very small screens
       } else {
-        setSpaceBetween(40); // Default value
+        setSpaceBetween(18); // Default value
       }
     };
 

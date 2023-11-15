@@ -6,7 +6,7 @@ export default function BodyContainer({ children, idName, scholarship }) {
     ? [
         {
           src: "https://tcnj.edu/custom/campaigns/images/walkthrough-mobile.jpg",
-          mediaQuery: "(max-width: 850px)",
+          mediaQuery: "(max-width: 600px)",
         },
         {
           src: "https://tcnj.edu/custom/campaigns/images/walkthrough-full.jpg",
@@ -17,7 +17,7 @@ export default function BodyContainer({ children, idName, scholarship }) {
     : [
         {
           src: "https://tcnj.edu/custom/campaigns/images/group-mobile.jpg",
-          mediaQuery: "(max-width: 850px)",
+          mediaQuery: "(max-width: 600px)",
         },
         {
           src: "https://tcnj.edu/custom/campaigns/images/group-full.jpg",
@@ -99,7 +99,7 @@ export default function BodyContainer({ children, idName, scholarship }) {
           }}
           initial="hidden"
           animate={image1Controls}
-          transition={{ duration: 0.75, delay: 0.9 }}
+          transition={{ duration: 0.75, delay: 0.6 }}
         />
         {!isWindowBelow1050 && (
           <motion.img
@@ -112,7 +112,7 @@ export default function BodyContainer({ children, idName, scholarship }) {
             }}
             initial="hidden"
             animate={image2Controls}
-            transition={{ duration: 0.75, delay: 0.6 }}
+            transition={{ duration: 0.75, delay: 0.9 }}
           />
         )}
       </div>
