@@ -577,7 +577,9 @@ footer {
   }
   .wrapper {
     // padding: 75px 0;
-
+    &.scholarship {
+      margin-top: 75px;
+    }
     &#tcnj-spirit {
       flex-direction: column-reverse;
       margin-top: 100px;
@@ -756,6 +758,9 @@ footer {
   // }
 
   .wrapper {
+    &.scholarship {
+      margin-top: 50px;
+    }
     &#tcnj-spirit {
       margin-top: 50px;
       padding-bottom: 50px;
