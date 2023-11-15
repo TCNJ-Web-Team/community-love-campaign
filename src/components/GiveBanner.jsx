@@ -1,11 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const GiveBanner = ({ children }) => {
+const GiveBanner = ({ children, scholarship }) => {
   return (
     <div className="banner">
       <motion.div
-        className="wrapper"
+        className={`wrapper ${scholarship ? "scholarship" : ""}`}
         id="opportunties"
         initial={{ opacity: 0, y: 25 }}
         whileInView={{ opacity: 1, y: 0 }}
