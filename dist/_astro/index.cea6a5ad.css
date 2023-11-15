@@ -162,7 +162,7 @@ header #arrow-link:after {
   width: 28px;
   height: 20px;
   margin-left: 0.5em;
-  background-image: url(./images/right-arrow.svg);
+  background-image: url(https://tcnj.edu/custom/campaigns/images/right-arrow.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -554,7 +554,7 @@ footer span {
     padding-bottom: 75px;
   }
   .wrapper#tcnj-spirit {
-    background-image: url(./images/yellow-bg-small.jpg);
+    background-image: url(https://tcnj.edu/custom/campaigns/images/yellow-bg-small.jpg);
     background-size: cover;
     padding-left: 50px;
     padding-right: 50px;

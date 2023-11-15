@@ -80,16 +80,14 @@ header {
       width: 28px;
       height: 20px;
       margin-left: 0.5em;
-      background-image: url(./images/right-arrow.svg);
+      background-image: url(https://tcnj.edu/custom/campaigns/images/right-arrow.svg);
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
     }
   }
 }
-header {
-  height: 75px;
-}
+
 .button-link {
   font-family: $raleway;
   font-weight: 600;
@@ -258,6 +256,9 @@ header {
       text-align: center;
       color: #2e2e2e;
       animation: fadeIn 1s ease forwards;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-bottom: 40px;
     }
   }
 }
@@ -339,11 +340,13 @@ header {
       text-align: center;
       color: $off-white;
       max-width: 1050px;
+      margin-top: 0;
+      margin-bottom: 0;
     }
     .button-link {
       background-color: $off-white;
       color: $dark-blue;
-      margin: 50px 0 0;
+      margin: 75px 0 0;
       &:hover,
       &:focus {
         color: $off-white;
@@ -357,7 +360,7 @@ header {
 footer {
   width: calc(100% - 50px);
   margin: 0 auto;
-  padding: 100px 0 125px;
+  padding: 100px 0 75px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -468,6 +471,9 @@ footer {
   }
   #tcnj-logo {
     height: 45px;
+  }
+  header {
+    height: 75px;
   }
   .intro {
     #banner {
@@ -595,7 +601,7 @@ footer {
     }
     &#tcnj-spirit {
       // width: 100%;
-      background-image: url("./images/yellow-bg-small.jpg");
+      background-image: url("https://tcnj.edu/custom/campaigns/images/yellow-bg-small.jpg");
       background-size: cover;
       padding-left: 50px;
       padding-right: 50px;

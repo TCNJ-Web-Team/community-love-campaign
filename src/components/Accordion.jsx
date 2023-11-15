@@ -20,12 +20,15 @@ export default function Accodion({ children, header, idName, startOpen }) {
         <span className="arrow">
           {open ? (
             <img
-              src="./images/minus.svg"
+              src="https://tcnj.edu/custom/campaigns/images/minus.svg"
               alt="close"
               style={{ marginBottom: "5px" }}
             />
           ) : (
-            <img src="./images/plus.svg" alt="open" />
+            <img
+              src="https://tcnj.edu/custom/campaigns/images/plus.svg"
+              alt="open"
+            />
           )}
         </span>
       </h2>

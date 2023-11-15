@@ -99,22 +99,25 @@ function L({ children: t, idName: s, scholarship: e }) {
   const n = e
       ? [
           {
-            src: "./images/group-mobile.jpg",
+            src: "https://tcnj.edu/custom/campaigns/images/group-mobile.jpg",
             mediaQuery: "(max-width: 850px)",
           },
-          { src: "./images/group-full.jpg", mediaQuery: "(max-width: 1050px)" },
-          { src: "./images/group.png" },
+          {
+            src: "https://tcnj.edu/custom/campaigns/images/group-full.jpg",
+            mediaQuery: "(max-width: 1050px)",
+          },
+          { src: "https://tcnj.edu/custom/campaigns/images/group.png" },
         ]
       : [
           {
-            src: "./images/walkthrough-mobile.jpg",
+            src: "https://tcnj.edu/custom/campaigns/images/walkthrough-mobile.jpg",
             mediaQuery: "(max-width: 850px)",
           },
           {
-            src: "./images/walkthrough-full.jpg",
+            src: "https://tcnj.edu/custom/campaigns/images/walkthrough-full.jpg",
             mediaQuery: "(max-width: 1050px)",
           },
-          { src: "./images/walkthrough.png" },
+          { src: "https://tcnj.edu/custom/campaigns/images/walkthrough.png" },
         ],
     i = u.useRef(null),
     r = B(i, { once: !0 }),
@@ -180,7 +183,7 @@ function L({ children: t, idName: s, scholarship: e }) {
             }),
             !m &&
               p.jsx(h.img, {
-                src: "./images/yellow-bg-small.jpg",
+                src: "https://tcnj.edu/custom/campaigns/images/yellow-bg-small.jpg",
                 alt: "yellow background",
                 id: "yellow-bg",
                 variants: {

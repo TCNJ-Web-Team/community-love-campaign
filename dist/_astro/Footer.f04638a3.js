@@ -7,7 +7,10 @@ function n({ children: r }) {
     children: [
       r,
       t.jsx("hr", {}),
-      t.jsx("img", { src: "./images/tcnj-logo-footer.png", alt: "TCNJ" }),
+      t.jsx("img", {
+        src: "https://tcnj.edu/custom/campaigns/images/tcnj-logo-footer.png",
+        alt: "TCNJ",
+      }),
       t.jsxs("span", { children: ["Copyright ©", o] }),
     ],
   });

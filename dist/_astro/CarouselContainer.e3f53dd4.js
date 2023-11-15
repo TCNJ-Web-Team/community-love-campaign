@@ -4607,7 +4607,8 @@ const vi = () => {
             ref: a,
             onTimeUpdate: p,
             onClick: m,
-            poster: "./images/pav-video-final.jpg",
+            poster:
+              "https://tcnj.edu/custom/campaigns/images/pav-video-final.jpg",
             controls: c,
             className: `video ${u.isPlaying ? "playing" : "stopped"}`,
             playsInline: !0,
@@ -4627,8 +4628,14 @@ const vi = () => {
             className: i ? "active" : "hidden",
             onTouchStart: l,
             children: u.isPlaying
-              ? L.jsx("img", { src: "./images/pause-button.svg", alt: "Pause" })
-              : L.jsx("img", { src: "./images/play-button.svg", alt: "Play" }),
+              ? L.jsx("img", {
+                  src: "https://tcnj.edu/custom/campaigns/images/pause-button.svg",
+                  alt: "Pause",
+                })
+              : L.jsx("img", {
+                  src: "https://tcnj.edu/custom/campaigns/images/play-button.svg",
+                  alt: "Play",
+                }),
           }),
           L.jsx("button", {
             id: "mute-button",
@@ -4734,7 +4741,7 @@ const vi = () => {
             children: [
               L.jsx(X, {
                 children: L.jsx("img", {
-                  src: "./images/pav-video-final.jpg",
+                  src: "https://tcnj.edu/custom/campaigns/images/pav-video-final.jpg",
                   alt: "Pavilion Rendering 1",
                 }),
               }),

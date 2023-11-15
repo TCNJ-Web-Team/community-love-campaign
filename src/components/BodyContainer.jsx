@@ -5,25 +5,25 @@ export default function BodyContainer({ children, idName, scholarship }) {
   const imageSources = !scholarship
     ? [
         {
-          src: "./images/walkthrough-mobile.jpg",
+          src: "https://tcnj.edu/custom/campaigns/images/walkthrough-mobile.jpg",
           mediaQuery: "(max-width: 850px)",
         },
         {
-          src: "./images/walkthrough-full.jpg",
+          src: "https://tcnj.edu/custom/campaigns/images/walkthrough-full.jpg",
           mediaQuery: "(max-width: 1050px)",
         },
-        { src: "./images/walkthrough.png" }, // Default source
+        { src: "https://tcnj.edu/custom/campaigns/images/walkthrough.png" }, // Default source
       ]
     : [
         {
-          src: "./images/group-mobile.jpg",
+          src: "https://tcnj.edu/custom/campaigns/images/group-mobile.jpg",
           mediaQuery: "(max-width: 850px)",
         },
         {
-          src: "./images/group-full.jpg",
+          src: "https://tcnj.edu/custom/campaigns/images/group-full.jpg",
           mediaQuery: "(max-width: 1050px)",
         },
-        { src: "./images/group.png" }, // Default source
+        { src: "https://tcnj.edu/custom/campaigns/images/group.png" }, // Default source
       ];
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -103,7 +103,7 @@ export default function BodyContainer({ children, idName, scholarship }) {
         />
         {!isWindowBelow1050 && (
           <motion.img
-            src="./images/yellow-bg-small.jpg"
+            src="https://tcnj.edu/custom/campaigns/images/yellow-bg-small.jpg"
             alt="yellow background"
             id="yellow-bg"
             variants={{

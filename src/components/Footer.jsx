@@ -3,7 +3,7 @@ export default function Footer() {
 
   return (
     <footer id="footer">
-      <p id="contact-info" class="wrapper">
+      <p id="contact-info" className="wrapper">
         <strong> Contact us: </strong>
         <a href="mailto:tcnjfund@tcnj.edu">tcnjfund@tcnj.edu </a>
         or
@@ -11,7 +11,10 @@ export default function Footer() {
         <a href="tele:1-800-347-9621"> 800.347.9621</a>
       </p>
       <hr />
-      <img src="./images/tcnj-logo-footer.png" alt="TCNJ" />
+      <img
+        src="https://tcnj.edu/custom/campaigns/images/tcnj-logo-footer.png"
+        alt="TCNJ"
+      />
       <span>Copyright ©{currentYear}</span>
     </footer>
   );
