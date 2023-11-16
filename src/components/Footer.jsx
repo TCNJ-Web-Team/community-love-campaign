@@ -4,11 +4,18 @@ export default function Footer() {
   return (
     <footer id="footer">
       <p id="contact-info" className="wrapper">
-        <strong> Contact us: </strong>
-        <a href="mailto:tcnjfund@tcnj.edu">tcnjfund@tcnj.edu </a>
-        or
-        <a href="tel:+16097712218"> 609.771.2218 </a>/
-        <a href="tel:+18003479621"> 800.347.9621</a>
+        <strong> Contact us: </strong>&nbsp;
+        <a href="mailto:tcnjfund@tcnj.edu">
+          <u>tcnjfund@tcnj.edu</u>{" "}
+        </a>
+        or&nbsp;
+        <a href="tel:+16097712218">
+          <u>609.771.2218</u>&nbsp;
+        </a>
+        /
+        <a href="tel:+18003479621">
+          &nbsp;<u>800.347.9621</u>
+        </a>
       </p>
       <hr />
       <img
