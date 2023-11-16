@@ -15,6 +15,16 @@ $raleway: "Raleway", sans-serif;
 // 	color: #fff;
 // 	padding: 2px;
 // }
+#scholarship-header {
+  .first-word::after {
+    content: "\00a0"; /* Unicode for non-breaking space */
+    display: inline-block;
+    /* padding-right: 10px; */
+    margin-right: -2px;
+    text-decoration: underline;
+  }
+}
+
 .banner {
   .wrapper {
     .accordion {
@@ -120,6 +130,7 @@ $raleway: "Raleway", sans-serif;
 
           a {
             color: $off-white;
+            text-decoration: underline;
           }
         }
         .button-link {
