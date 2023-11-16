@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer id="footer">
       <p id="contact-info" className="wrapper">
-        <strong> Contact us: </strong>&nbsp;
+        <strong> Contact us: </strong>
         <a href="mailto:tcnjfund@tcnj.edu">
           <u>tcnjfund@tcnj.edu</u>{" "}
         </a>
