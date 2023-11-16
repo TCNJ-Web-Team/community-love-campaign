@@ -18,6 +18,10 @@ $raleway: "Raleway", sans-serif;
 #scholarship-header {
   .first-word::after {
     content: "\00a0"; /* Unicode for non-breaking space */
+    display: inline-block;
+    /* padding-right: 10px; */
+    margin-right: -2px;
+    text-decoration: underline;
   }
 }
 
