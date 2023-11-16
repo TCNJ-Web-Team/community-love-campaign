@@ -7,8 +7,8 @@ export default function Footer() {
         <strong> Contact us: </strong>
         <a href="mailto:tcnjfund@tcnj.edu">tcnjfund@tcnj.edu </a>
         or
-        <a href="tele:1-609-771-2218"> 609.771.2218 </a>/
-        <a href="tele:1-800-347-9621"> 800.347.9621</a>
+        <a href="tel:+16097712218"> 609.771.2218 </a>/
+        <a href="tel:+18003479621"> 800.347.9621</a>
       </p>
       <hr />
       <img
