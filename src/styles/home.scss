@@ -365,7 +365,7 @@ footer {
   flex-direction: column;
   align-items: center;
   img {
-    max-width: 440px;
+    max-width: 430px;
     width: 80%;
   }
   p {
@@ -388,11 +388,11 @@ footer {
     // background: transparent;
     display: block;
     background-color: $dark-blue;
-    margin: 100px 0 35px;
+    margin: 100px 0 60px;
     border: none;
   }
   span {
-    margin-top: -40px;
+    margin-top: -10px;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -641,7 +641,7 @@ footer {
   footer {
     padding: 75px 0;
     hr {
-      margin: 75px 0 35px;
+      margin: 75px 0 45px;
     }
   }
 }
@@ -849,6 +849,7 @@ footer {
     }
     img {
       width: 100%;
+      max-width: 323px;
     }
     span {
       margin-top: 0;

@@ -19,7 +19,7 @@ export default function Footer() {
       </p>
       <hr />
       <img
-        src="https://tcnj.edu/custom/campaigns/images/tcnj-logo-footer.png"
+        src="https://tcnj.edu/custom/campaigns/images/campaign-logo.svg"
         alt="TCNJ"
       />
       <span>Copyright ©{currentYear}</span>
