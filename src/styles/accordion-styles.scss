@@ -15,6 +15,12 @@ $raleway: "Raleway", sans-serif;
 // 	color: #fff;
 // 	padding: 2px;
 // }
+#scholarship-header {
+  .first-word::after {
+    content: "\00a0"; /* Unicode for non-breaking space */
+  }
+}
+
 .banner {
   .wrapper {
     .accordion {

@@ -1,13 +1,30 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import "../styles/accordion-styles.scss";
 
-export default function Accodion({ children, header, idName, startOpen }) {
+export default function Accodion({
+  children,
+  header,
+  idName,
+  startOpen,
+  scholarship,
+}) {
   const [open, setOpen] = useState(startOpen);
+  const headerRef = useRef(null);
 
+  useEffect(() => {
+    if (scholarship && headerRef.current) {
+      const headerElement = headerRef.current;
+      const words = headerElement.textContent.split(" ");
+      headerElement.innerHTML = `<span class="first-word">${words.shift()}</span> ${words.join(
+        " "
+      )}`;
+    }
+  }, [scholarship]);
   const onAccordionClick = () => {
     // console.log(event);
     setOpen(!open);
   };
+
   return (
     <div className="accordion" id={idName}>
       <h2
@@ -16,7 +33,9 @@ export default function Accodion({ children, header, idName, startOpen }) {
         }`}
         onClick={onAccordionClick}
       >
-        <span>{header}</span>
+        <span ref={headerRef} id={`${scholarship ? "scholarship-header" : ""}`}>
+          {header}
+        </span>
         <span className="arrow">
           {open ? (
             <img
