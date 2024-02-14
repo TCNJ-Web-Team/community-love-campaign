@@ -11,6 +11,22 @@ $off-white: #fffdf4;
   left: 0;
   right: 0;
   top: 0;
+
+  transition: all 0.15s ease-in;
+
+  opacity: 0;
+
+  pointer-events: none;
+  #popup-background-blur {
+    pointer-events: none;
+  }
+  &.show-popup {
+    opacity: 1;
+    pointer-events: all;
+    #popup-background-blur {
+      pointer-events: all;
+    }
+  }
   #popup-container {
     // transition: all 0.5s;
     position: absolute;
@@ -144,7 +160,7 @@ $off-white: #fffdf4;
   }
   #popup-background-blur {
     cursor: pointer;
-    pointer-events: all;
+    // pointer-events: all;
     opacity: 1;
     transition: all 0.25s;
     z-index: 202;

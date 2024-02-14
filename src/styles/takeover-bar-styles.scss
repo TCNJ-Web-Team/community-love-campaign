@@ -57,6 +57,8 @@ $raleway: "Raleway", sans-serif;
     color: #000;
     text-transform: uppercase;
     background-color: #f8bb13;
+    transition: all 0.15s ease-in;
+
     padding: 0;
     max-width: 215px;
     display: flex;
@@ -65,6 +67,9 @@ $raleway: "Raleway", sans-serif;
     align-items: center;
     height: 40px;
     cursor: pointer;
+    &:hover {
+      background-color: #ffe607;
+    }
     @media screen and (max-width: 850px) {
       font-size: 16px;
       line-height: 30px;

@@ -20,19 +20,17 @@ export default function Popup({ popupStatus, togglePopup, children }) {
   }, [popupStatus, togglePopup]);
 
   return (
-    popupStatus && (
-      <div id="popup">
-        <div id="popup-container">
-          {children}
-          <img
-            src="https://tcnj.edu/custom/icon-library/micro/micro-close.svg"
-            id="pop-up-close-button"
-            alt="close"
-            onClick={togglePopup}
-          />
-        </div>
-        <div id="popup-background-blur" onClick={togglePopup}></div>
+    <div id="popup" className={popupStatus ? "show-popup" : "hide-popup"}>
+      <div id="popup-container">
+        {children}
+        <img
+          src="https://tcnj.edu/custom/icon-library/micro/micro-close.svg"
+          id="pop-up-close-button"
+          alt="close"
+          onClick={togglePopup}
+        />
       </div>
-    )
+      <div id="popup-background-blur" onClick={togglePopup}></div>
+    </div>
   );
 }
