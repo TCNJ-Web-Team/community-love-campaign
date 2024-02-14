@@ -1,7 +1,11 @@
+$domine: "Domine", sans-serif;
+$raleway: "Raleway", sans-serif;
+
 #top-takeover-bar {
   background-color: #293f6f;
   padding: 0;
   margin-bottom: 0;
+
   margin-top: 20px;
   margin-right: 25px;
   margin-left: 25px;
@@ -25,7 +29,7 @@
     padding-right: 60px;
   }
   p {
-    font-family: "Domine";
+    font-family: $domine;
     font-weight: bold;
     font-size: 23px;
     line-height: 40px;
@@ -44,7 +48,7 @@
     }
   }
   a {
-    font-family: "Raleway";
+    font-family: $raleway;
     font-weight: bold;
     font-size: 18px;
     line-height: 30px;
