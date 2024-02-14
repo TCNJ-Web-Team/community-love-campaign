@@ -10,6 +10,16 @@
   align-items: center;
   gap: 35px;
   padding: 18px 0;
+  @media screen and (max-width: 850px) {
+    padding: 15px 0 17px;
+    margin-top: 25px;
+  }
+  @media screen and (max-width: 600px) {
+    margin: 10px;
+    margin-bottom: 0;
+    flex-direction: column;
+    gap: 15px;
+  }
   @media screen and (max-width: 1250px) {
     padding-left: 38px;
     padding-right: 60px;
@@ -23,6 +33,15 @@
     color: #fffdf4;
     padding: 0;
     margin: 0;
+    @media screen and (max-width: 850px) {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    @media screen and (max-width: 600px) {
+      font-size: 15px;
+      line-height: 20px;
+      text-align: center;
+    }
   }
   a {
     font-family: "Raleway";
@@ -40,5 +59,16 @@
     justify-content: center;
     align-items: center;
     height: 40px;
+    cursor: pointer;
+    @media screen and (max-width: 850px) {
+      font-size: 16px;
+      line-height: 30px;
+    }
+    @media screen and (max-width: 600px) {
+      font-size: 13px;
+      line-height: 30px;
+      height: 45px;
+      max-width: 184px;
+    }
   }
 }
