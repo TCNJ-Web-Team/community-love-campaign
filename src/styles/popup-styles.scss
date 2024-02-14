@@ -1,6 +1,7 @@
 $domine: "Domine", sans-serif;
 $raleway: "Raleway", sans-serif;
-
+$dark-blue: #293f6f;
+$off-white: #fffdf4;
 #popup {
   position: fixed;
   z-index: 203;
@@ -46,7 +47,11 @@ $raleway: "Raleway", sans-serif;
       padding: 0 60px 100px;
     }
     @media screen and (max-width: 650px) {
+      width: 75%;
       padding: 0 30px 75px;
+      //   padding-top: 50px;
+      top: 5vh;
+      top: 5dvh;
     }
     #pop-up-close-button {
       position: absolute;
@@ -83,7 +88,7 @@ $raleway: "Raleway", sans-serif;
       }
       @media screen and (max-width: 600px) {
         font-size: 25px;
-        padding-top: 75px;
+        padding-top: 60px;
         line-height: 30px;
       }
     }
@@ -118,6 +123,15 @@ $raleway: "Raleway", sans-serif;
       text-align: center;
       color: #fffdf5;
       text-decoration: none;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+      border: 2px solid $dark-blue;
+      &:hover,
+      &:focus {
+        background-color: $off-white;
+        color: $dark-blue;
+        border: 2px solid $dark-blue;
+      }
       @media screen and (max-width: 850px) {
         font-size: 18px;
         line-height: 30px;
