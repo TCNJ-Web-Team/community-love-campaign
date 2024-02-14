@@ -1,0 +1,82 @@
+#popup {
+  position: fixed;
+  z-index: 203;
+  display: flex;
+  justify-content: center;
+  #popup-container {
+    // transition: all 0.5s;
+    position: absolute;
+    // border-radius: 25px;
+    top: 8%;
+    // overflow-y: scroll;
+    z-index: 202;
+    margin: 0 auto;
+    max-width: 800px;
+    min-width: 666px;
+    background-color: #fffdf4;
+
+    max-width: 1128px;
+    width: 100%;
+    display: flex;
+    padding: 0 125px 98px;
+    flex-direction: column;
+    align-items: center;
+    #pop-up-close-button {
+      position: absolute;
+      top: 35px;
+      right: 35px;
+    }
+    h2 {
+      padding-top: 125px;
+      font-family: "Domine";
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 40px;
+      text-align: center;
+      color: #293f6f;
+      padding-bottom: 35px;
+    }
+    p {
+      font-family: "Domine";
+      font-weight: normal;
+      font-size: 25px;
+      line-height: 40px;
+      text-align: center;
+      color: #000;
+      padding-bottom: 75px;
+    }
+    a {
+      width: 100%;
+      max-width: 430px;
+      color: white;
+      background-color: #293f6f;
+      height: 71px;
+      font-family: "Raleway";
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 30px;
+      text-align: center;
+      color: #fffdf5;
+      text-decoration: none;
+    }
+  }
+  #popup-background-blur {
+    cursor: pointer;
+    pointer-events: all;
+    opacity: 1;
+    transition: all 0.25s;
+    z-index: 202;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+  }
+}
