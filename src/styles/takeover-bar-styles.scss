@@ -1,0 +1,44 @@
+#top-takeover-bar {
+  background-color: #293f6f;
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 20px;
+  margin-right: 25px;
+  margin-left: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  padding: 18px 0;
+  @media screen and (max-width: 1250px) {
+    padding-left: 38px;
+    padding-right: 60px;
+  }
+  p {
+    font-family: "Domine";
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 40px;
+    text-align: left;
+    color: #fffdf4;
+    padding: 0;
+    margin: 0;
+  }
+  a {
+    font-family: "Raleway";
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    background-color: #f8bb13;
+    padding: 0;
+    max-width: 215px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+  }
+}
