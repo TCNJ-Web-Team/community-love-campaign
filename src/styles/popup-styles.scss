@@ -3,29 +3,55 @@
   z-index: 203;
   display: flex;
   justify-content: center;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
   #popup-container {
     // transition: all 0.5s;
     position: absolute;
     // border-radius: 25px;
-    top: 8%;
+    // top: 8%;
+    top: 8vh;
+    top: 8dvh;
     // overflow-y: scroll;
     z-index: 202;
     margin: 0 auto;
-    max-width: 800px;
-    min-width: 666px;
+    max-width: 740px;
     background-color: #fffdf4;
 
-    max-width: 1128px;
     width: 100%;
     display: flex;
-    padding: 0 125px 98px;
+    padding: 0 98px 125px;
     flex-direction: column;
     align-items: center;
+    @media screen and (max-width: 1100px) {
+      width: 60%;
+      padding: 0 56px 100px;
+    }
+    @media screen and (max-width: 850px) {
+      padding: 0 60px 100px;
+    }
+    @media screen and (max-width: 650px) {
+      padding: 0 30px 75px;
+    }
     #pop-up-close-button {
       position: absolute;
       top: 35px;
       right: 35px;
       cursor: pointer;
+      @media screen and (max-width: 850px) {
+        //   padding: 0 60px 100px;
+        top: 25px;
+        right: 25px;
+      }
+      @media screen and (max-width: 650px) {
+        //   padding: 0 30px 75px;
+        top: 20px;
+        right: 20px;
+        width: 25px;
+        height: auto;
+      }
     }
     h2 {
       padding-top: 125px;
@@ -36,6 +62,17 @@
       text-align: center;
       color: #293f6f;
       padding-bottom: 35px;
+      @media screen and (max-width: 850px) {
+        padding-top: 100px;
+        padding-bottom: 25px;
+        font-size: 35px;
+        line-height: 40px;
+      }
+      @media screen and (max-width: 600px) {
+        font-size: 25px;
+        padding-top: 75px;
+        line-height: 30px;
+      }
     }
     p {
       font-family: "Domine";
@@ -45,6 +82,15 @@
       text-align: center;
       color: #000;
       padding-bottom: 75px;
+      @media screen and (max-width: 850px) {
+        font-size: 20px;
+        line-height: 35px;
+        padding-bottom: 50px;
+      }
+      @media screen and (max-width: 600px) {
+        font-size: 15px;
+        line-height: 25px;
+      }
     }
     a {
       width: 100%;
@@ -59,6 +105,14 @@
       text-align: center;
       color: #fffdf5;
       text-decoration: none;
+      @media screen and (max-width: 850px) {
+        font-size: 18px;
+        line-height: 30px;
+      }
+      @media screen and (max-width: 600px) {
+        font-size: 13px;
+        line-height: 30px;
+      }
     }
   }
   #popup-background-blur {
