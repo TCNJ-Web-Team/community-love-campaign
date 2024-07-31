@@ -1,0 +1,84 @@
+$domine: "Domine", sans-serif;
+$raleway: "Raleway", sans-serif;
+
+#top-takeover-bar {
+  background-color: #293f6f;
+  padding: 0;
+  margin-bottom: 0;
+
+  margin-top: 20px;
+  margin-right: 25px;
+  margin-left: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  padding: 18px 0;
+  @media screen and (max-width: 850px) {
+    padding: 15px 0 17px;
+    margin-top: 25px;
+  }
+  @media screen and (max-width: 600px) {
+    margin: 10px;
+    margin-bottom: 0;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 40px !important;
+  }
+  @media screen and (max-width: 1250px) {
+    padding-left: 38px;
+    padding-right: 60px;
+  }
+  p {
+    font-family: $domine;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 40px;
+    text-align: left;
+    color: #fffdf4;
+    padding: 0;
+    margin: 0;
+    @media screen and (max-width: 850px) {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    @media screen and (max-width: 600px) {
+      font-size: 15px;
+      line-height: 20px;
+      text-align: center;
+    }
+  }
+  a {
+    font-family: $raleway;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    background-color: #f8bb13;
+    transition: all 0.15s ease-in;
+
+    padding: 0;
+    max-width: 215px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    cursor: pointer;
+    &:hover {
+      background-color: #ffe607;
+    }
+    @media screen and (max-width: 850px) {
+      font-size: 16px;
+      line-height: 30px;
+    }
+    @media screen and (max-width: 600px) {
+      font-size: 13px;
+      line-height: 30px;
+      height: 45px;
+      max-width: 184px;
+    }
+  }
+}

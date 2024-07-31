@@ -13,6 +13,7 @@ import Accodion from "../components/Accordion";
 import Layout from "../layouts/Layout.astro";
 import Footer from "../components/Footer";
 import GiveBanner from "../components/GiveBanner";
+import TopTakeoverBar from "../components/TopTakeoverBar";
 import "@fontsource/domine/400.css";
 import "@fontsource/domine/600.css";
 import "@fontsource/raleway/400.css";
@@ -21,6 +22,17 @@ import "@fontsource/raleway/600.css";
 import "@fontsource/open-sans";
 ---
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KFGQ1WS6YS"
+></script>
+<script is:inline>
+  // console.log("gtag");
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  (window.dataLayer = window.dataLayer || []),
+    gtag("js", new Date()),
+    gtag("config", "G-KFGQ1WS6YS");
+</script>
 <link
   href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
   rel="stylesheet"
@@ -32,6 +44,7 @@ import "@fontsource/open-sans";
   description="The Pavilion at TCNJ will provide an ideal space in which the TCNJ community and others can gather for everything from musical and dramatic performances to lectures and debates to ceremonies and presentations. Its open, modern design will enable all kinds of interdisciplinary connections among learners, researchers, innovators, students, and others."
 >
   <main>
+    <TopTakeoverBar client:load />
     <Header />
     <Intro
       body="The Pavilion at TCNJ will provide an ideal space in which the TCNJ community and others can gather for everything from musical and dramatic performances to lectures and debates to ceremonies and presentations. Its open, modern design will enable all kinds of interdisciplinary connections among learners, researchers, innovators, students, and others."

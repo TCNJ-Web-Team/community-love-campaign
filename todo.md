@@ -1,3 +1,22 @@
+Progress Meter
+
+- could be a part of this update
+- down the road
+
+separate page is confusing
+Countdown timer
+Time frame is this week
+
+Buddy mayo matching
+
+Countdown
+$1M before next april
+
+Copy
+Please join the TCNJ community to help bring this creative vision to life. Your support will be matched fifty cents on the dollar - up to $1,000,000 - by a generous contribution from Dr. Buddy Mayo, TCNJ professor emeritus.
+
+Whether through an individual gift or a sponsorship, there are numerous ways to lend your support to the creation of The Pavilion at TCNJ. Naming opportunities will underwrite various aspects of programming provided through The Pavilion at TCNJ, including but not limited to recurring programs and initiatives, student organizations’ use of the space, lecture series and scholarly panels, visiting artists, and scholar-in-residence fellowships.
+
 - [ ] Get TCNJ in svg form
 - [ ] Fix large desktop banner height
 
