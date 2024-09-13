@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer id="footer">
       <p id="contact-info" className="wrapper">
-        <strong> Contact us: </strong>
+        {/* <strong> Contact us: </strong>
         <a href="mailto:tcnjfund@tcnj.edu">
           <u>tcnjfund@tcnj.edu</u>{" "}
         </a>
@@ -15,7 +15,24 @@ export default function Footer() {
         /
         <a href="tel:+18003479621">
           &nbsp;<u>800.347.9621</u>
-        </a>
+        </a> */}
+        <strong>
+          For information on individual opportunities for support, please
+          contact Wendell Collins,
+          <a href="mailto:collinsu@tcnj.edu">
+            {" "}
+            <u>collinsu@tcnj.edu</u>
+          </a>
+        </strong>
+        <br />
+        <br />{" "}
+        <strong>
+          For corporate and foundation opportunities, please contact Jennifer
+          Kosakowski,{" "}
+          <a href="mailto:kosakowj@tcnj.edu">
+            <u>kosakowj@tcnj.edu</u>
+          </a>
+        </strong>
       </p>
       <hr />
       <img
