@@ -89,14 +89,14 @@ const CarouselContainer = ({ carouselImages, children }) => {
         className="topSwiper"
         onSlideChange={stopVideos}
       >
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <figure>
             <CustomVideo client:load />
             <figcaption>
               preliminary rendering subject to modification
             </figcaption>
           </figure>
-        </SwiperSlide>
+        </SwiperSlide> */}
         {carouselImages &&
           carouselImages.map((image, index) => {
             return (
@@ -120,12 +120,12 @@ const CarouselContainer = ({ carouselImages, children }) => {
         modules={[FreeMode, Navigation, Thumbs]}
         className="bottomSwiper"
       >
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <img
             src="https://tcnj.edu/custom/campaigns/images/pav-video-final.jpg"
             alt="Pavilion Rendering 1"
           />
-        </SwiperSlide>
+        </SwiperSlide> */}
         {carouselImages &&
           carouselImages.map((image, index) => {
             return (
