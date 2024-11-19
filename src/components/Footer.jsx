@@ -27,10 +27,10 @@ export default function Footer() {
         <br />
         <br />{" "}
         <strong>
-          For corporate and foundation opportunities, please contact Jennifer
-          Kosakowski,{" "}
-          <a href="mailto:kosakowj@tcnj.edu">
-            <u>kosakowj@tcnj.edu</u>
+          For corporate and foundation opportunities, please contact Brett
+          Davidson,{" "}
+          <a href="mailto:davidsbr@tcnj.edu">
+            <u>davidsbr@tcnj.edu</u>
           </a>
         </strong>
       </p>
