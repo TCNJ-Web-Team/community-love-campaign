@@ -18,13 +18,13 @@ export default function Footer() {
         </a> */}
         <strong>
           For information on individual opportunities for support, please
-          contact Wendell Collins,
-          <a href="mailto:collinsu@tcnj.edu">
+          contact Laura Smith,
+          <a href="mailto:laura.smith@tcnj.edu">
             {" "}
-            <u>collinsu@tcnj.edu</u>
+            <u>laura.smith@tcnj.edu</u>
           </a>
         </strong>
-        <br />
+        {/* <br />
         <br />{" "}
         <strong>
           For corporate and foundation opportunities, please contact Brett
@@ -32,7 +32,7 @@ export default function Footer() {
           <a href="mailto:davidsbr@tcnj.edu">
             <u>davidsbr@tcnj.edu</u>
           </a>
-        </strong>
+        </strong> */}
       </p>
       <hr />
       <img
