@@ -5,15 +5,15 @@ export default function BodyContainer({ children, idName, scholarship }) {
   const imageSources = !scholarship
     ? [
         {
-          src: "https://tcnj.edu/custom/campaigns/new-pavilion-images/walkthrough-mobile-new.jpg",
+          src: "https://tcnj.edu/custom/campaigns/new-pavilion-images/walkthrough-2026.jpg",
           mediaQuery: "(max-width: 600px)",
         },
         {
-          src: "https://tcnj.edu/custom/campaigns/new-pavilion-images/walkthrough-full-new.jpg",
+          src: "https://tcnj.edu/custom/campaigns/new-pavilion-images/walkthrough-2026-full.jpg",
           mediaQuery: "(max-width: 1050px)",
         },
         {
-          src: "https://tcnj.edu/custom/campaigns/new-pavilion-images/walkthrough-new.png",
+          src: "https://tcnj.edu/custom/campaigns/new-pavilion-images/walkthrough-2026.png",
         }, // Default source
       ]
     : [
