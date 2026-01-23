@@ -255,10 +255,16 @@ input[type="range"]:focus::-moz-range-thumb {
   #mute-button {
     top: 5vw;
     right: 5vw;
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
+  }
+  #caption-btn {
+    top: 5vw;
+    left: 5vw;
+    width: 40px;
+    height: 40px;
   }
   .video-wrCustomVideoer button i {
-    font-size: 15px;
+    font-size: 25px;
   }
 }
