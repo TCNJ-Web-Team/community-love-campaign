@@ -13,7 +13,7 @@ import Accodion from "../components/Accordion";
 import Layout from "../layouts/Layout.astro";
 import Footer from "../components/Footer";
 import GiveBanner from "../components/GiveBanner";
-import TopTakeoverBar from "../components/TopTakeoverBar";
+// import TopTakeoverBar from "../components/TopTakeoverBar";
 import "@fontsource/domine/400.css";
 import "@fontsource/domine/600.css";
 import "@fontsource/raleway/400.css";
@@ -29,9 +29,9 @@ import "@fontsource/open-sans";
   function gtag() {
     dataLayer.push(arguments);
   }
-  (window.dataLayer = window.dataLayer || []),
+  ((window.dataLayer = window.dataLayer || []),
     gtag("js", new Date()),
-    gtag("config", "G-KFGQ1WS6YS");
+    gtag("config", "G-KFGQ1WS6YS"));
 </script>
 <link
   href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -39,18 +39,18 @@ import "@fontsource/open-sans";
 />
 
 <Layout
-  title="For the Love of Community"
+  title="TCNJ Rehearsal Space"
   image="hero.jpg"
-  description="The Pavilion at TCNJ will provide an ideal space in which the TCNJ community and others can gather for everything from musical and dramatic performances to lectures and debates to ceremonies and presentations. Its open, modern design will enable all kinds of interdisciplinary connections among learners, researchers, innovators, students, and others."
+  description="The Rehearsal Space at TCNJ will provide an ideal space in which the TCNJ community and others can gather for everything from musical and dramatic performances to lectures and debates to ceremonies and presentations. Its open, modern design will enable all kinds of interdisciplinary connections among learners, researchers, innovators, students, and others."
 >
   <main>
-    <TopTakeoverBar client:load />
+    <!-- <TopTakeoverBar client:load /> -->
     <Header />
     <Intro
       body="The Pavilion at TCNJ will provide an ideal space in which the TCNJ community and others can gather for everything from musical and dramatic performances to lectures and debates to ceremonies and presentations. Its open, modern design will enable all kinds of interdisciplinary connections among learners, researchers, innovators, students, and others."
       buttonText="Invest in Community"
       buttonLink="https://give.tcnj.edu/invest-in-community/"
-      heroImage="hero-new-4.jpg"
+      heroImage="hero-2026/hero-final.jpg"
     />
 
     <BodyContainer idName="tcnj-spirit" scholarship={false} client:load>
@@ -74,83 +74,33 @@ import "@fontsource/open-sans";
       carouselImages={[
         {
           image:
-            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery/ext-1_Page_111.jpg",
-          alt: "Pavilion Rendering 1",
+            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery-2026/render-03.jpg",
+          alt: "Rendering 3",
         },
         {
           image:
-            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery/ext-1_Page_19.jpg",
-          alt: "Pavilion Rendering 2",
+            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery-2026/render-01.jpg",
+          alt: "Rendering 1",
         },
         {
           image:
-            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery/ext-1_Page_20.jpg",
-          alt: "Pavilion Rendering 3",
+            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery-2026/render-02.jpg",
+          alt: "Rendering 2",
         },
         {
           image:
-            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery/ext-1_Page_21.jpg",
-          alt: "Pavilion Rendering 3",
+            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery-2026/render-04.jpg",
+          alt: "Rendering 4",
         },
         {
           image:
-            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery/ext-1_Page_14.jpg",
-          alt: "Pavilion Rendering 3",
+            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery-2026/render-05.jpg",
+          alt: "Rendering 5",
         },
         {
           image:
-            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery/ext-1_Page_13.jpg",
-          alt: "Pavilion Rendering 3",
-        },
-        {
-          image:
-            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery/ext-1_Page_12.jpg",
-          alt: "Pavilion Rendering 3",
-        },
-        {
-          image:
-            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery/ext-1_Page_11.jpg",
-          alt: "Pavilion Rendering 3",
-        },
-        {
-          image:
-            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery/ext-1_Page_10.jpg",
-          alt: "Pavilion Rendering 3",
-        },
-        {
-          image:
-            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery/ext-1_Page_09.jpg",
-          alt: "Pavilion Rendering 3",
-        },
-        {
-          image:
-            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery/ext-1_Page_05.jpg",
-          alt: "Pavilion Rendering 3",
-        },
-        {
-          image:
-            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery/ext-1_Page_06.jpg",
-          alt: "Pavilion Rendering 3",
-        },
-        {
-          image:
-            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery/ext-1_Page_04.jpg",
-          alt: "Pavilion Rendering 3",
-        },
-        {
-          image:
-            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery/ext-1_Page_03.jpg",
-          alt: "Pavilion Rendering 3",
-        },
-        {
-          image:
-            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery/ext-1_Page_02.jpg",
-          alt: "Pavilion Rendering 3",
-        },
-        {
-          image:
-            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery/ext-1_Page_01.jpg",
-          alt: "Pavilion Rendering 3",
+            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery-2026/render-06.jpg",
+          alt: "Rendering 6",
         },
       ]}
       client:load

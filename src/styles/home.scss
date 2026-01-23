@@ -1,7 +1,15 @@
 $dark-blue: #293f6f;
-$off-white: #fffdf4;
+$off-white: #fff;
 $domine: "Domine", sans-serif;
 $raleway: "Raleway", sans-serif;
+$fenice: "itc-fenice", serif;
+$interstate: "interstate-condensed", sans-serif;
+
+$xl: "1920px"; // Matches theme.json xl
+$lg: "1250px"; // Matches theme.json lg
+$md: "900px"; // Matches theme.json md
+$sm: "550px"; // Matches theme.json sm
+
 @keyframes fadeInAndSlide {
   0% {
     opacity: 0;
@@ -29,17 +37,35 @@ body {
 }
 // main {
 // }
-h1,
+h1 {
+  font-family: $fenice;
+  font-weight: normal;
+  font-size: 70px;
+  line-height: 75px;
+  text-align: center;
+  color: #293f6f;
+  padding: 0;
+  margin: 0;
+  @media screen and (min-width: $sm) and (max-width: $lg) {
+    font-size: 60px;
+    line-height: 55px;
+    padding-top: 15px;
+    // margin-bottom: 20px;
+  }
+  @media screen and (max-width: $sm) {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 15px;
+  }
+}
 h2,
 h3 {
-  font-family: $domine;
-  font-weight: 600;
-  font-size: 35px;
-  line-height: 45px;
+  font-family: $fenice;
+  font-weight: normal;
+  font-size: 43px;
+  line-height: 50px;
   text-align: left;
   color: #000;
-  margin: 0;
-  padding: 0;
 }
 p {
   font-family: $raleway;
@@ -56,16 +82,17 @@ p {
 header {
   display: flex;
   flex-direction: row;
-  padding: 0 25px;
+  padding: 30px 25px 25px;
   width: calc(100% - 115px);
   justify-content: space-between;
   align-items: center;
-  height: 115px;
+  // height: 115px;
   margin: 0 auto;
+
   #arrow-link {
-    font-family: $raleway;
-    font-weight: 600;
-    font-size: 18px;
+    font-family: $interstate;
+    font-weight: 700;
+    font-size: 19px;
     line-height: 40px;
     text-align: left;
     color: $dark-blue;
@@ -77,10 +104,10 @@ header {
     &::after {
       content: "";
       display: inline-block;
-      width: 28px;
+      width: 14px;
       height: 20px;
       margin-left: 0.5em;
-      background-image: url(https://tcnj.edu/custom/campaigns/images/right-arrow.svg);
+      background-image: url(https://tcnj.edu/custom/campaigns/new-pavilion-images/nav-arrow.svg);
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
@@ -89,15 +116,15 @@ header {
 }
 
 .button-link {
-  font-family: $raleway;
-  font-weight: 600;
+  font-family: $interstate;
+  font-weight: 700;
   // font-size: 20px;
   font-size: 18px;
   line-height: 30px;
   text-align: center;
   color: #fff;
   display: flex;
-  padding: 25px 45px;
+  padding: 22px 45px;
   max-width: calc(450px - 90px);
   width: 100%;
   background-color: $dark-blue;
@@ -107,6 +134,11 @@ header {
   transition: all 0.2s ease-in-out;
   border: 2px solid transparent;
   cursor: pointer;
+  @media screen and (max-width: $sm) {
+    // max-width: 310px;
+    font-size: 16px;
+    line-height: 20px;
+  }
   &:hover,
   &:focus {
     background-color: $off-white;
@@ -125,9 +157,10 @@ header {
     gap: 40px;
     flex-direction: row;
     overflow: visible;
-    padding-bottom: 275px;
+    padding-bottom: 220px;
     h2 {
       max-width: 540px;
+      margin-top: 0;
     }
   }
   .overlay-container {
@@ -139,6 +172,10 @@ header {
       width: inherit;
       position: relative;
       z-index: 2;
+      @media screen and (max-width: $sm) {
+        height: 400px;
+        object-fit: cover;
+      }
     }
     #yellow-bg {
       position: absolute;
@@ -151,10 +188,46 @@ header {
   }
 }
 #tcnj-logo {
-  height: 45px;
+  height: 75px;
+  @media screen and (max-width: $md) {
+    height: 50px;
+  }
+  @media screen and (min-width: $md) and (max-width: $lg) {
+    height: 60px;
+  }
   img {
     height: inherit;
   }
+}
+.bounce {
+  position: absolute;
+  top: 0;
+  width: calc(100% + 1px);
+  height: auto;
+  z-index: 10;
+  margin-left: -1px;
+  top: 44.5vw;
+  // @media screen and (min-width: $lg) {
+  // }
+  @media screen and (min-width: $xl) and (max-width: 2000px) {
+    top: 44.5vw;
+  }
+  @media screen and (min-width: 2001px) {
+    top: 825px;
+  }
+  &#lower-bounce {
+    // top: 0;
+    top: -2vw;
+    // top: auto;
+    @media screen and (max-width: $xl) {
+      // top: 0;
+      top: -2vw;
+    }
+    @media screen and (min-width: $xl) {
+      top: -2vw;
+    }
+  }
+  // animation: bounceAnimation 3s ease-in-out infinite;
 }
 .intro {
   position: relative;
@@ -181,15 +254,15 @@ header {
     position: relative;
     z-index: 11;
 
-    border-radius: 465px 0px 0px 0px;
+    // border-radius: 465px 0px 0px 0px;
     /* background: url(...); */
     // border: 1px solid rgba(0, 0, 0, 0);
 
     /* background: url(...); */
     // animation: fadeInAndSlide 1.25s ease forwards;
-    @media screen and (max-width: 2000px) {
-      border-radius: 24vw 0px 0px 0px;
-    }
+    // @media screen and (max-width: 2000px) {
+    //   border-radius: 24vw 0px 0px 0px;
+    // }
     // @media screen and (max-width: 1600px) {
     //   border-radius: 365px 0px 0px 0px;
     // }
@@ -201,12 +274,12 @@ header {
     // }
     // @media screen and (max-width: 850px) {
     // }
-    @media screen and (max-width: 500px) {
-      border-radius: 130px 0px 0px 0px;
-    }
-    @media screen and (max-width: 400px) {
-      border-radius: 110px 0px 0px 0px;
-    }
+    // @media screen and (max-width: 500px) {
+    //   border-radius: 130px 0px 0px 0px;
+    // }
+    // @media screen and (max-width: 400px) {
+    //   border-radius: 110px 0px 0px 0px;
+    // }
   }
   #hero-bg {
     position: absolute;
@@ -227,11 +300,11 @@ header {
     width: 100%;
     margin: 0 auto;
     // height: 787px;
-    background: #fffdf4;
+    background: #ffffff;
 
     background: linear-gradient(
-      rgba(255, 253, 244, 0.92) 0%,
-      rgba(255, 253, 244, 1) 50%
+      rgba(255, 255, 255, 0.92) 0%,
+      rgba(255, 255, 255, 1) 50%
     );
 
     animation: fadeIn 1.75s ease forwards;
@@ -239,7 +312,7 @@ header {
       text-align: center;
       display: flex;
       flex-direction: column;
-      padding: 75px 195px;
+      padding: 90px 195px;
       align-items: center;
       justify-content: center;
       gap: 35px;
@@ -251,14 +324,17 @@ header {
     p {
       font-family: $domine;
       font-weight: normal;
-      font-size: 25px;
+      font-size: 22px;
       line-height: 40px;
       text-align: center;
       color: #2e2e2e;
       animation: fadeIn 1s ease forwards;
       margin-top: 0;
       margin-bottom: 0;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
+      @media screen and (max-width: $sm) {
+        margin-bottom: 20px;
+      }
     }
   }
 }
@@ -277,7 +353,13 @@ header {
   }
   #banner {
     position: relative;
-    margin-top: 31.5vw;
+    margin-top: 33.5vw;
+    @media screen and (max-width: $lg) {
+      margin-top: 35vw;
+    }
+    @media screen and (max-width: $sm) {
+      margin-top: 40.5vw;
+    }
     top: 0;
     #inner-banner {
       padding-bottom: 0 !important;
@@ -313,9 +395,24 @@ header {
   }
 }
 .banner {
-  background-color: $dark-blue;
+  background-color: transparent;
   width: calc(100% - 75px);
   margin: 0 auto;
+  position: relative;
+  @media screen and (max-width: $md) {
+    background-color: $dark-blue;
+  }
+  #lower-bg-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    // @media screen and (max-width: $md) {
+    //   display: none;
+    // }
+  }
   .wrapper {
     display: flex;
     flex-direction: column;
@@ -323,14 +420,24 @@ header {
     text-align: center;
     padding: 125px 0;
     color: white;
+    position: relative;
+    z-index: 10;
     h2 {
-      font-family: $domine;
-      font-weight: 600;
-      font-size: 45px;
+      font-family: $fenice;
+      font-weight: normal;
+      font-size: 50px;
       line-height: 35px;
       text-align: center;
+      color: #fffdf4;
+
+      text-align: center;
       color: $off-white;
-      padding-bottom: 35px;
+      @media screen and (max-width: lg) {
+        padding-bottom: 35px;
+      }
+      @media screen and (min-width: $sm) and (max-width: lg) {
+        font-size: 45px;
+      }
     }
     p {
       font-family: $domine;
@@ -417,7 +524,7 @@ footer {
     // background-repeat: no-repeat;
 
     #hero-image {
-      width: calc(100% - 50px);
+      width: calc(100% - 100px);
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 17.5vw;
@@ -474,12 +581,10 @@ footer {
   #logo {
     width: 90%;
   }
-  #tcnj-logo {
-    height: 45px;
-  }
-  header {
-    height: 75px;
-  }
+
+  // header {
+  //   height: 75px;
+  // }
   .intro {
     #banner {
       // padding: 0;
@@ -588,13 +693,15 @@ footer {
       h2 {
         max-width: none;
         text-align: center;
+        font-size: 40px;
+        line-height: 45px;
       }
       p {
         text-align: center;
       }
       .text-container {
         text-align: center;
-        padding: 25px 50px 0;
+        padding: 5px 50px 0;
       }
     }
     &#tcnj-spirit,
@@ -607,7 +714,7 @@ footer {
     }
     &#tcnj-spirit {
       // width: 100%;
-      background-image: url("https://tcnj.edu/custom/campaigns/images/yellow-bg-small.jpg");
+      // background-image: url("https://tcnj.edu/custom/campaigns/images/yellow-bg-small.jpg");
       background-size: cover;
       padding-left: 50px;
       padding-right: 50px;
@@ -625,7 +732,7 @@ footer {
       width: 100%;
       padding-top: 0px;
       #shield-image {
-        border-radius: 0 0 200px 0;
+        // border-radius: 0 0 200px 0;
       }
       #yellow-bg {
         width: 1250px;
@@ -704,7 +811,7 @@ footer {
     padding: 10px 0px 30px;
 
     p {
-      margin-top: 10px;
+      margin-top: 0px;
       margin-bottom: 30px;
       font-size: 16px;
       line-height: 30px;
@@ -718,10 +825,10 @@ footer {
   }
 }
 @media screen and (max-width: 800px) {
-  header {
-    width: calc(100% - 50px);
-    margin: 0 auto;
-  }
+  // header {
+  //   width: calc(100% - 50px);
+  //   margin: 0 auto;
+  // }
   // .intro {
   //   margin: 0;
   //   #banner {
@@ -734,17 +841,14 @@ footer {
   // }
   .button-link {
     width: auto;
-    font-size: 15px;
-    line-height: 18px;
+    // font-size: 15px;
+    // line-height: 18px;
   }
   .wrapper .overlay-container #shield-image {
-    border-radius: 0 0 150px 0;
+    // border-radius: 0 0 150px 0;
   }
 }
-@media screen and (max-width: 600px) {
-  #tcnj-logo {
-    height: 35px;
-  }
+@media screen and (max-width: $sm) {
   // .swiper {
   //   .swiper-slide {
   //     margin-right: 15px !important;
@@ -756,17 +860,29 @@ footer {
   //     margin-top: 48.5vw;
   //   }
   // }
-
+  .intro {
+    #banner {
+      #inner-banner {
+        padding: 11vw 5vw;
+      }
+    }
+    #hero-image {
+      width: calc(100% - 20px);
+      height: 300px;
+      object-fit: cover;
+    }
+  }
   .wrapper {
     &.scholarship {
       margin-top: 50px;
     }
     &#tcnj-spirit {
-      margin-top: 50px;
-      padding-bottom: 50px;
+      margin-top: 100px;
+      padding-bottom: 45px;
       h2 {
-        font-size: 25px;
-        line-height: 35px;
+        font-size: 27px;
+        line-height: 32px;
+        margin-top: 5px;
       }
       .text-container {
         padding-left: 5vw;
@@ -781,22 +897,23 @@ footer {
       }
     }
     &#carousel {
-      padding-top: 50px;
+      padding-top: 45px;
       padding-bottom: 50px;
     }
     &#opportunties {
       width: calc(100% - 50px);
 
-      padding-top: 75px;
+      padding-top: 45px;
       padding-bottom: 50px;
 
       .button-link {
         margin: 25px auto 0px auto !important;
       }
       h2 {
-        font-size: 25px;
+        font-size: 30px;
         line-height: 35px;
-        padding-bottom: 20px;
+        padding-bottom: 5px;
+        padding-top: 10px;
         // &:nth-child(2) {
         //   /* Styles for the second instance of .my-class */
         //   margin-top: 0;
@@ -866,11 +983,12 @@ footer {
   // }
   header {
     width: calc(100% - 40px);
-    padding: 0;
+    padding: 20px 0;
     a#arrow-link {
-      font-size: 14px;
+      // font-size: 14px;
       &:after {
-        height: 15px;
+        height: 20px;
+        width: 20px;
       }
     }
   }
@@ -898,7 +1016,7 @@ footer {
     }
     &#tcnj-spirit {
       .overlay-container #shield-image {
-        border-radius: 0 0 75px 0;
+        // border-radius: 0 0 75px 0;
       }
     }
   }
@@ -912,6 +1030,8 @@ footer {
     margin: 0 25px;
     #hero-image {
       width: calc(100% - 60px);
+      height: 58vw;
+      object-fit: cover;
     }
     #banner {
       width: calc(100% - 120px);
@@ -945,6 +1065,7 @@ footer {
   #carousel {
     #carousel-body {
       padding: 50px 0px 0px;
+      padding: 42px 0px 0px;
       p {
         font-size: 20px;
         line-height: 35px;
@@ -965,4 +1086,17 @@ footer {
     font-size: 18px;
     line-height: 30px;
   }
+}
+.banner {
+  .wrapper {
+    &#opportunties {
+      @media screen and (min-width: $xl) {
+        padding-top: 11.5vw;
+      }
+    }
+  }
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  filter: drop-shadow(-3px 2px 7px #000000b5);
 }

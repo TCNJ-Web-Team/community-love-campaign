@@ -8,7 +8,7 @@ import useVideoPlayer from "../hooks/useVideoPlayer";
 const CustomVideo = () => {
   const [showCaptions, setShowCaptions] = useState(false); // Add state variable
   const [isHovered, setIsHovered] = useState(true);
-  const [hasSubs, setHasSubs] = useState(false); // State to track subtitles
+  const [hasSubs, setHasSubs] = useState(true); // State to track subtitles
 
   const handleMouseOver = () => {
     setIsHovered(true);
@@ -41,9 +41,9 @@ const CustomVideo = () => {
     if (videoElement.current) {
       // Use videoElement to control the caption track
       if (showCaptions) {
-        videoElement.current.textTracks[0].mode = "hidden";
-      } else {
         videoElement.current.textTracks[0].mode = "showing";
+      } else {
+        videoElement.current.textTracks[0].mode = "hidden";
       }
     }
   };
@@ -63,7 +63,7 @@ const CustomVideo = () => {
           ref={videoElement}
           onTimeUpdate={handleOnTimeUpdate}
           onClick={togglePlay}
-          poster="https://tcnj.edu/custom/campaigns/images/pav-video-final.jpg"
+          poster="https://tcnj.edu/custom/campaigns/new-pavilion-images/video-frame.jpg"
           controls={falseElement}
           className={`video ${playerState.isPlaying ? "playing" : "stopped"}`}
           playsInline // Prevent fullscreen on modern browsers
@@ -74,9 +74,15 @@ const CustomVideo = () => {
         >
           <source
             type="video/mp4"
-            src="https://player.vimeo.com/progressive_redirect/playback/877982802/rendition/720p/file.mp4?loc=external&signature=bc200f96f6b07e8b374c471bda8ecca669eb66eb6ebc062747d83cee4bb49933"
+            src="https://player.vimeo.com/progressive_redirect/playback/1157253778/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&signature=fceb68e9084e4fe4206537a361cb33b786bf02bb9efe2a5394f0b853d360fe5d"
           />
-
+          <track
+            src="/2026/rehearsal_space.vtt"
+            label="English"
+            kind="captions"
+            srcLang="en-us"
+            default
+          />
           {/* <track
             preload="true"
             kind="captions"

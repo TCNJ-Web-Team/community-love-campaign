@@ -5,15 +5,15 @@ export default function BodyContainer({ children, idName, scholarship }) {
   const imageSources = !scholarship
     ? [
         {
-          src: "https://tcnj.edu/custom/campaigns/new-pavilion-images/walkthrough-mobile-new.jpg",
+          src: "https://tcnj.edu/custom/campaigns/new-pavilion-images/walkthrough-2026-update.jpg",
           mediaQuery: "(max-width: 600px)",
         },
         {
-          src: "https://tcnj.edu/custom/campaigns/new-pavilion-images/walkthrough-full-new.jpg",
+          src: "https://tcnj.edu/custom/campaigns/new-pavilion-images/walkthrough-2026-full.jpg",
           mediaQuery: "(max-width: 1050px)",
         },
         {
-          src: "https://tcnj.edu/custom/campaigns/new-pavilion-images/walkthrough-new.png",
+          src: "https://tcnj.edu/custom/campaigns/new-pavilion-images/walkthrough-2026-update.jpg",
         }, // Default source
       ]
     : [
@@ -33,7 +33,7 @@ export default function BodyContainer({ children, idName, scholarship }) {
   const image1Controls = useAnimation();
   const image2Controls = useAnimation();
   const [source, setSource] = useState(
-    imageSources[imageSources.length - 1].src
+    imageSources[imageSources.length - 1].src,
   );
   const [isWindowBelow1050, setIsWindowBelow1050] = useState(false);
 
@@ -103,7 +103,7 @@ export default function BodyContainer({ children, idName, scholarship }) {
           animate={image1Controls}
           transition={{ duration: 0.75, delay: 0.6 }}
         />
-        {!isWindowBelow1050 && (
+        {/* {!isWindowBelow1050 && (
           <motion.img
             src="https://tcnj.edu/custom/campaigns/images/yellow-bg-small.jpg"
             alt="yellow background"
@@ -116,7 +116,7 @@ export default function BodyContainer({ children, idName, scholarship }) {
             animate={image2Controls}
             transition={{ duration: 0.75, delay: 0.9 }}
           />
-        )}
+        )} */}
       </div>
     </div>
   );
