@@ -181,10 +181,18 @@ header {
     width: 545px;
     position: relative;
     // max-width: 545px;
+    @media screen and (min-width: $sm) and (max-width: $lg) {
+      width: 400px;
+    }
     #shield-image {
       width: inherit;
       position: relative;
       z-index: 2;
+      @media screen and (min-width: 1050px) and (max-width: $lg) {
+        object-position: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
       @media screen and (max-width: $sm) {
         height: 400px;
         object-fit: cover;
@@ -620,7 +628,7 @@ footer {
     width: calc(100% - 200px);
     .overlay-container {
       overflow: visible;
-      width: 465px;
+      // width: 465px;
       #yellow-bg {
         width: 650px;
         top: 150px;
@@ -658,8 +666,8 @@ footer {
   .wrapper {
     // width: calc(100% - 200px);
     .overlay-container {
-      width: 365px;
-      padding-top: 100px;
+      // width: 365px;
+      // padding-top: 100px;
       #yellow-bg {
         width: 550px;
         top: 200px;
