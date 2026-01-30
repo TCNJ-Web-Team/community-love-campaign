@@ -1,6 +1,6 @@
 ---
 import Intro from "../components/Intro.astro";
-import BodyContainer from "../components/BodyContainer";
+import QuoteBody from "../components/QuoteBody";
 import Scroll from "../components/Test";
 import "../styles/home.scss";
 import "../styles/accordion-styles.scss";
@@ -39,25 +39,33 @@ import "@fontsource/open-sans";
 />
 
 <Layout
-  title="Music Annex"
+  title="TCNJ Music Annex"
   image="hero.jpg"
-  description="The Rehearsal Space at TCNJ will provide an ideal space in which the TCNJ community and others can gather for everything from musical and dramatic performances to lectures and debates to ceremonies and presentations. Its open, modern design will enable all kinds of interdisciplinary connections among learners, researchers, innovators, students, and others."
+  description="Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lacus vel augue laoreet rutrum."
 >
   <main>
     <!-- <TopTakeoverBar client:load /> -->
     <Header />
     <Intro
-      body="“There’s this kind of magic that happens when you perform with other people,” says Maddie Murphy ’26. “And it happens here at TCNJ every day.” This speaks volumes about the caliber of TCNJ’s music program and perfectly describes what happens as word continues to spread about the college’s many ensembles. Their impressive reputation entices students in majors throughout the college — well beyond the music program — to join and further their musical passion at a high level."
-      buttonText="Invest in Community"
+      body="Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lacus vel augue laoreet rutrum."
+      buttonText="Give Today"
       buttonLink="https://give.tcnj.edu/invest-in-community/"
       heroImage="hero-2026/hero-final.jpg"
     />
 
-    <BodyContainer idName="tcnj-spirit" scholarship={false} client:load>
+    <QuoteBody idName="tcnj-spirit" scholarship={true} client:load>
       <h2>
-        A design that embodies collaboration, creativity, accessibility, and
-        inclusion
+        “There’s this kind of magic that happens when you perform with other
+        people. And it happens here at TCNJ every day.”
+        <span>– Maddie Murphy ’26 </span>
       </h2>
+      <p>
+        This speaks volumes about the caliber of TCNJ’s music program. It also
+        perfectly describes what happens as word continues to spread about the
+        college’s many ensembles. Their impressive reputation entices students
+        in majors throughout the college — well beyond the music program — to
+        join and further their musical passion at a high level.
+      </p>
       <p>
         However, the ensembles have now outgrown both the actual size and the
         noise capacity of their practice location. These musicians are left
@@ -68,7 +76,7 @@ import "@fontsource/open-sans";
         safe, expansive location dedicated to the college’s growing ensembles
         while maintaining the signature look and feel of TCNJ’s campus.
       </p>
-    </BodyContainer>
+    </QuoteBody>
 
     <CarouselContainer
       carouselImages={[
