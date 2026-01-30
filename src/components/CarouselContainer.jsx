@@ -22,7 +22,8 @@ import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 import "swiper/css";
 import CustomVideo from "./CustomVideo";
 
-const CarouselContainer = ({ carouselImages, children }) => {
+// const CarouselContainer = ({ carouselImages, children }) => {
+const CarouselContainer = ({ carouselImages }) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const [spaceBetween, setSpaceBetween] = useState(40);
 
@@ -135,7 +136,7 @@ const CarouselContainer = ({ carouselImages, children }) => {
             );
           })}
       </Swiper>
-      {children}
+      {/* {children} */}
     </div>
   );
 };

@@ -18,10 +18,11 @@ export default function Footer() {
         </a> */}
         <strong>
           For information on individual opportunities for support, please
-          contact Laura Smith,
-          <a href="mailto:laura.smith@tcnj.edu">
+          contact Greg Schmidt, chief development officer and campaign manager,
+          at
+          <a href="mailto:schmidtg@tcnj.edu">
             {" "}
-            <u>laura.smith@tcnj.edu</u>
+            <u>schmidtg@tcnj.edu</u>
           </a>
         </strong>
         {/* <br />
