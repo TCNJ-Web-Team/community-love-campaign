@@ -462,6 +462,14 @@ header {
     color: white;
     position: relative;
     z-index: 10;
+    &#opportunties {
+      @media screen and (min-width: $lg) {
+        padding: 175px 0;
+      }
+      @media screen and (min-width: $xl) {
+        padding: 200px 0 150px;
+      }
+    }
     h2 {
       font-family: $fenice;
       font-weight: normal;
@@ -751,6 +759,7 @@ footer {
     &#carousel {
       padding-top: 75px;
       padding-bottom: 75px;
+      padding-bottom: 125px;
     }
     &#tcnj-spirit {
       // width: 100%;
@@ -938,7 +947,7 @@ footer {
     }
     &#carousel {
       padding-top: 45px;
-      padding-bottom: 50px;
+      padding-bottom: 85px;
     }
     &#opportunties {
       width: calc(100% - 50px);
