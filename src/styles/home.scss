@@ -186,6 +186,10 @@ header {
         display: block;
         color: #000;
         margin-top: 15px;
+        @media screen and (max-width: $sm) {
+          font-size: 16px;
+          line-height: 30px;
+        }
       }
     }
     p {
@@ -943,13 +947,13 @@ footer {
       padding-bottom: 50px;
 
       .button-link {
-        margin: 25px auto 0px auto !important;
+        margin: 45px auto 15px auto !important;
       }
       h2 {
         font-size: 30px;
         line-height: 35px;
         padding-bottom: 5px;
-        padding-top: 10px;
+        padding-top: 15px;
         // &:nth-child(2) {
         //   /* Styles for the second instance of .my-class */
         //   margin-top: 0;
