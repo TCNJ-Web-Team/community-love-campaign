@@ -172,7 +172,10 @@ header {
     flex-direction: row;
     overflow: visible;
     padding-bottom: 220px;
-    @media screen and (min-width: $xl) {
+    @media screen and (max-width: $lg) {
+      margin-top: 100px;
+    }
+    @media screen and (min-width: $lg) {
       padding-bottom: 160px;
       margin-top: 166px;
     }
@@ -408,7 +411,7 @@ header {
       @media screen and (max-width: $sm) {
         margin-bottom: 15px;
       }
-      @media screen and (min-width: $xl) {
+      @media screen and (min-width: $sm) {
         margin-bottom: 7px;
       }
     }
@@ -915,29 +918,37 @@ footer {
     }
   }
 }
-@media screen and (max-width: 800px) {
-  // header {
-  //   width: calc(100% - 50px);
-  //   margin: 0 auto;
-  // }
-  // .intro {
-  //   margin: 0;
-  //   #banner {
-  //     width: calc(100% - 100px);
-  //   }
-  //   #hero-image {
-  //     padding-top: 25px;
-  //     width: calc(100% - 25px);
-  //   }
-  // }
-  .button-link {
-    width: auto;
-    // font-size: 15px;
-    // line-height: 18px;
+// header {
+//   width: calc(100% - 50px);
+//   margin: 0 auto;
+// }
+// .intro {
+//   margin: 0;
+//   #banner {
+//     width: calc(100% - 100px);
+//   }
+//   #hero-image {
+//     padding-top: 25px;
+//     width: calc(100% - 25px);
+//   }
+// }
+.button-link {
+  width: 35%;
+  @media screen and (min-width: $sm) {
+    width: 70%;
   }
-  .wrapper .overlay-container #shield-image {
-    // border-radius: 0 0 150px 0;
+  @media screen and (min-width: $md) {
+    width: 60%;
+    // max-width: 232px;
   }
+  @media screen and (min-width: $lg) {
+    width: 430px;
+  }
+  // font-size: 15px;
+  // line-height: 18px;
+}
+.wrapper .overlay-container #shield-image {
+  // border-radius: 0 0 150px 0;
 }
 @media screen and (max-width: $sm) {
   // .swiper {
