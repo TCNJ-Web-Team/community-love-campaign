@@ -35,15 +35,16 @@ const { heading, body, buttonLink, buttonText, scholarship, heroImage } =
   <img
     src={"https://tcnj.edu/custom/campaigns/new-pavilion-images/" + heroImage}
     id="hero-image"
-    alt="TCNJ Pavillion"
+    alt="Music Annex"
   />
 
   <div id="banner">
     <div id="inner-banner">
       <!-- <CommunityLogoAnimation scholarship={scholarship} client:load /> -->
       <!-- <h2>{heading}</h2> -->
-      <h1>TCNJ Music Annex</h1>
-      <p>{body}</p>
+      <h1>Music Annex</h1>
+      <p id="intro-body">{body}<span>– Maddie Murphy ’26 </span></p>
+
       {
         buttonText && (
           <a class="button-link" href={buttonLink}>

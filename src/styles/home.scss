@@ -175,22 +175,22 @@ header {
       // max-width: 540px;
       margin-top: 0;
       text-align: center;
-      span {
-        font-family: $raleway;
-        font-weight: 400;
-        // font-size: 19px;
-        font-size: 20px;
-        line-height: 40px;
-        // text-align: left;
-        font-style: italic;
-        display: block;
-        color: #000;
-        margin-top: 15px;
-        @media screen and (max-width: $sm) {
-          font-size: 16px;
-          line-height: 30px;
-        }
-      }
+      // span {
+      //   font-family: $raleway;
+      //   font-weight: 400;
+      //   // font-size: 19px;
+      //   font-size: 20px;
+      //   line-height: 40px;
+      //   // text-align: left;
+      //   font-style: italic;
+      //   display: block;
+      //   color: #000;
+      //   margin-top: 15px;
+      //   @media screen and (max-width: $sm) {
+      //     font-size: 16px;
+      //     line-height: 30px;
+      //   }
+      // }
     }
     p {
       text-align: center;
@@ -356,6 +356,24 @@ header {
       align-items: center;
       justify-content: center;
       gap: 35px;
+      #intro-body {
+        span {
+          font-family: $raleway;
+          font-weight: 400;
+          // font-size: 19px;
+          font-size: 20px;
+          line-height: 40px;
+          // text-align: left;
+          font-style: italic;
+          display: block;
+          color: #000;
+          margin-top: 15px;
+          @media screen and (max-width: $sm) {
+            font-size: 16px;
+            line-height: 30px;
+          }
+        }
+      }
     }
     #svg-container {
       max-width: 635px;
