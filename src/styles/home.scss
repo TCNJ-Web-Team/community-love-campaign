@@ -172,6 +172,10 @@ header {
     flex-direction: row;
     overflow: visible;
     padding-bottom: 220px;
+    @media screen and (min-width: $xl) {
+      padding-bottom: 160px;
+      margin-top: 166px;
+    }
     h2 {
       // max-width: 540px;
       margin-top: 0;
@@ -195,7 +199,7 @@ header {
     }
     p {
       text-align: center;
-      @media screen and (min-width: $sm) and (max-width: $lg) {
+      @media screen and (min-width: $sm) {
         padding-bottom: 20px;
         &:last-of-type {
           padding-bottom: 0;
@@ -300,7 +304,10 @@ header {
     margin-bottom: 365px;
     position: relative;
     z-index: 11;
-
+    @media screen and (min-width: $xl) {
+      height: 924px;
+      object-fit: cover;
+    }
     // border-radius: 465px 0px 0px 0px;
     /* background: url(...); */
     // border: 1px solid rgba(0, 0, 0, 0);
@@ -401,6 +408,9 @@ header {
       @media screen and (max-width: $sm) {
         margin-bottom: 15px;
       }
+      @media screen and (min-width: $xl) {
+        margin-bottom: 7px;
+      }
     }
   }
 }
@@ -434,6 +444,9 @@ header {
 }
 #carousel {
   padding-bottom: 200px;
+  @media screen and (min-width: $xl) {
+    padding-bottom: 215px;
+  }
   .swiper-slide {
     .container {
       width: 100%;
