@@ -24,7 +24,7 @@ const VideoComponent = () => {
         <video
           loading="visible"
           poster="https://media-files.vidstack.io/poster-seo.png"
-          src="https://player.vimeo.com/progressive_redirect/playback/877982802/rendition/720p/file.mp4?loc=external&signature=bc200f96f6b07e8b374c471bda8ecca669eb66eb6ebc062747d83cee4bb49933"
+          src="https://player.vimeo.com/progressive_redirect/playback/1157253778/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&signature=fceb68e9084e4fe4206537a361cb33b786bf02bb9efe2a5394f0b853d360fe5d"
           preload="none"
           data-video="0"
           controls
