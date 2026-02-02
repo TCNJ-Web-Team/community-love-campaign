@@ -8,6 +8,7 @@ $interstate: "interstate-condensed", sans-serif;
 $xl: "1920px"; // Matches theme.json xl
 $lg: "1250px"; // Matches theme.json lg
 $md: "900px"; // Matches theme.json md
+$smMd: "800px"; // Matches theme.json md
 $sm: "550px"; // Matches theme.json sm
 
 @keyframes fadeInAndSlide {
@@ -194,6 +195,12 @@ header {
     }
     p {
       text-align: center;
+      @media screen and (min-width: $sm) and (max-width: $lg) {
+        padding-bottom: 20px;
+        &:last-of-type {
+          padding-bottom: 0;
+        }
+      }
     }
   }
   // .overlay-container {
@@ -487,6 +494,9 @@ header {
       }
       @media screen and (min-width: $xl) {
         padding: 200px 0 150px;
+      }
+      @media screen and (min-width: $sm) and (max-width: $lg) {
+        padding-bottom: 100px;
       }
     }
     h2 {
@@ -979,6 +989,7 @@ footer {
       padding-top: 45px;
       // padding-bottom: 50px;
       padding-bottom: 60px;
+
       .button-link {
         margin: 45px auto 15px auto !important;
       }
@@ -1154,7 +1165,7 @@ footer {
   }
   footer {
     #contact-info {
-      max-width: 425px;
+      // max-width: 425px;
     }
   }
 
