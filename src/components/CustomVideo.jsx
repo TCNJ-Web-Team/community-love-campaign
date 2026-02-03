@@ -77,7 +77,7 @@ const CustomVideo = () => {
             src="https://player.vimeo.com/progressive_redirect/playback/1157253778/rendition/1080p/file.mp4%20%281080p%29.mp4?loc=external&signature=fceb68e9084e4fe4206537a361cb33b786bf02bb9efe2a5394f0b853d360fe5d"
           />
           <track
-            src="/2026/rehearsal_space.vtt"
+            src="/2026/rehearsal_space_updated.vtt"
             label="English"
             kind="captions"
             srcLang="en-us"
