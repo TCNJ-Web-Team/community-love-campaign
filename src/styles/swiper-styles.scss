@@ -31,6 +31,9 @@
         line-height: 20px;
         // text-align: left;
         color: black;
+        background-color: rgb(255 255 255 / 72%);
+        padding: 10px 20px;
+
         @media screen and (max-width: 600px) {
           font-size: 10px;
           left: 2vw;
