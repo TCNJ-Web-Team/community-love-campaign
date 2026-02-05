@@ -25,6 +25,7 @@ export default function Footer() {
           {" "}
           <u>schmidtg@tcnj.edu</u>
         </a>
+        .
         {/* <br />
         <br />{" "}
         <strong>
