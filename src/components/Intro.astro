@@ -21,22 +21,30 @@ const { heading, body, buttonLink, buttonText, scholarship, heroImage } =
 <section class="intro">
   <!-- <CommunityLogoAnimation client:load /> -->
   <img
-    src="https://tcnj.edu/custom/campaigns/images/hero-bg.jpg"
+    src="https://tcnj.edu/custom/campaigns/new-pavilion-images/hero-2026/blue-bg-large.jpg"
     id="hero-bg"
     alt="Background yellow"
+  />
+  <img
+    src="/2026/top-bounce.svg"
+    alt="bg image"
+    class="bounce"
+    id="top-bounce"
   />
   <!-- <img src="/hero.png" id="hero-image" alt="TCNJ Pavillion" /> -->
   <img
     src={"https://tcnj.edu/custom/campaigns/new-pavilion-images/" + heroImage}
     id="hero-image"
-    alt="TCNJ Pavillion"
+    alt="Music Annex"
   />
 
   <div id="banner">
     <div id="inner-banner">
-      <CommunityLogoAnimation scholarship={scholarship} client:load />
+      <!-- <CommunityLogoAnimation scholarship={scholarship} client:load /> -->
       <!-- <h2>{heading}</h2> -->
-      <p>{body}</p>
+      <h1>Music Annex</h1>
+      <p id="intro-body">{body}<span>— Madelyn Murphy ’26</span></p>
+
       {
         buttonText && (
           <a class="button-link" href={buttonLink}>

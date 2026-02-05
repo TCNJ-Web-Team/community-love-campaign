@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import VideoComponent from "../components/VideoComponent";
+// import VideoComponent from "../components/VideoComponent";
 
 // import VideoComponent from "./VideoComponent";
 // import ImageContainer from "../components/ImageContainer.astro";
@@ -22,7 +22,8 @@ import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 import "swiper/css";
 import CustomVideo from "./CustomVideo";
 
-const CarouselContainer = ({ carouselImages, children }) => {
+// const CarouselContainer = ({ carouselImages, children }) => {
+const CarouselContainer = ({ carouselImages }) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const [spaceBetween, setSpaceBetween] = useState(40);
 
@@ -89,14 +90,14 @@ const CarouselContainer = ({ carouselImages, children }) => {
         className="topSwiper"
         onSlideChange={stopVideos}
       >
-        {/* <SwiperSlide>
+        <SwiperSlide>
           <figure>
             <CustomVideo client:load />
-            <figcaption>
+            {/* <figcaption>
               preliminary rendering subject to modification
-            </figcaption>
+            </figcaption> */}
           </figure>
-        </SwiperSlide> */}
+        </SwiperSlide>
         {carouselImages &&
           carouselImages.map((image, index) => {
             return (
@@ -120,12 +121,12 @@ const CarouselContainer = ({ carouselImages, children }) => {
         modules={[FreeMode, Navigation, Thumbs]}
         className="bottomSwiper"
       >
-        {/* <SwiperSlide>
+        <SwiperSlide>
           <img
-            src="https://tcnj.edu/custom/campaigns/images/pav-video-final.jpg"
+            src=" https://tcnj.edu/custom/campaigns/new-pavilion-images/video-frame-small.jpg"
             alt="Pavilion Rendering 1"
           />
-        </SwiperSlide> */}
+        </SwiperSlide>
         {carouselImages &&
           carouselImages.map((image, index) => {
             return (
@@ -135,7 +136,7 @@ const CarouselContainer = ({ carouselImages, children }) => {
             );
           })}
       </Swiper>
-      {children}
+      {/* {children} */}
     </div>
   );
 };

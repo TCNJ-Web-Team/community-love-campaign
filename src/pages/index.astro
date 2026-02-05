@@ -1,6 +1,6 @@
 ---
 import Intro from "../components/Intro.astro";
-import BodyContainer from "../components/BodyContainer";
+import QuoteBody from "../components/QuoteBody";
 import Scroll from "../components/Test";
 import "../styles/home.scss";
 import "../styles/accordion-styles.scss";
@@ -13,7 +13,7 @@ import Accodion from "../components/Accordion";
 import Layout from "../layouts/Layout.astro";
 import Footer from "../components/Footer";
 import GiveBanner from "../components/GiveBanner";
-import TopTakeoverBar from "../components/TopTakeoverBar";
+// import TopTakeoverBar from "../components/TopTakeoverBar";
 import "@fontsource/domine/400.css";
 import "@fontsource/domine/600.css";
 import "@fontsource/raleway/400.css";
@@ -29,9 +29,9 @@ import "@fontsource/open-sans";
   function gtag() {
     dataLayer.push(arguments);
   }
-  (window.dataLayer = window.dataLayer || []),
+  ((window.dataLayer = window.dataLayer || []),
     gtag("js", new Date()),
-    gtag("config", "G-KFGQ1WS6YS");
+    gtag("config", "G-KFGQ1WS6YS"));
 </script>
 <link
   href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -39,147 +39,100 @@ import "@fontsource/open-sans";
 />
 
 <Layout
-  title="For the Love of Community"
-  image="hero.jpg"
-  description="The Pavilion at TCNJ will provide an ideal space in which the TCNJ community and others can gather for everything from musical and dramatic performances to lectures and debates to ceremonies and presentations. Its open, modern design will enable all kinds of interdisciplinary connections among learners, researchers, innovators, students, and others."
+  title="Music Annex | TCNJ"
+  image="hero-final.jpg"
+  description="The Music Annex aims to create a place for the college's talented, ever-growing ensembles to call their own. When completed, this modern structure will offer a 2,500-square-foot rehearsal room featuring 20-foot ceilings and safe, state-of-the-art acoustics, all while maintaining the signature look and feel of TCNJ’s campus."
 >
   <main>
-    <TopTakeoverBar client:load />
+    <!-- <TopTakeoverBar client:load /> -->
     <Header />
     <Intro
-      body="The Pavilion at TCNJ will provide an ideal space in which the TCNJ community and others can gather for everything from musical and dramatic performances to lectures and debates to ceremonies and presentations. Its open, modern design will enable all kinds of interdisciplinary connections among learners, researchers, innovators, students, and others."
-      buttonText="Invest in Community"
-      buttonLink="https://give.tcnj.edu/invest-in-community/"
-      heroImage="hero-new-4.jpg"
+      body="“There’s this kind of magic that happens when you perform with other people. And it happens here at TCNJ every day.”"
+      buttonText="Give Today"
+      buttonLink="https://give.tcnj.edu/musicannex/"
+      heroImage="hero-2026/hero-final.jpg"
     />
 
-    <BodyContainer idName="tcnj-spirit" scholarship={false} client:load>
-      <h2>
-        A design that embodies collaboration, creativity, accessibility, and
-        inclusion
-      </h2>
+    <QuoteBody idName="tcnj-spirit" scholarship={true} client:load>
       <p>
-        The Pavilion at TCNJ will integrate flexibility, sustainability, and
-        efficient space use while also prioritizing acoustics and performance
-        technology. Integral to its functionality is a retractable door that
-        opens to a covered, multipurpose outdoor seating area. Slated to be
-        built in a centralized location on campus, The Pavilion at TCNJ will
-        host events year-round and facilitate next-level partnerships: Think
-        science and business researchers joined by scholars, dancers, artists,
-        and linguists to explore their interdisciplinary and creative potential.
+        That word — magic — speaks volumes about the caliber of TCNJ’s music
+        program. It also perfectly describes what happens as word continues to
+        spread about the college’s many ensembles. Their impressive reputation
+        entices students in majors throughout the college — well beyond the
+        music program — to join and further their musical passion at a high
+        level.
       </p>
-    </BodyContainer>
+      <p>
+        However, the ensembles have outgrown both the actual size and the noise
+        capacity of their practice location. These students are left without a
+        permanent home, shuffling equipment from building to building and
+        sharing limited available space with other student groups.
+      </p>
+      <p>
+        The Music Annex aims to create just that: a place for these talented,
+        ever-growing ensembles to call their own. When completed, this modern
+        structure will offer a 2,500-square-foot rehearsal room featuring
+        20-foot ceilings and safe, state-of-the-art acoustics, all while
+        maintaining the signature look and feel of TCNJ’s campus.
+      </p>
+    </QuoteBody>
 
     <CarouselContainer
       carouselImages={[
         {
           image:
-            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery/ext-1_Page_111.jpg",
-          alt: "Pavilion Rendering 1",
+            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery-2026/render-03.jpg",
+          alt: "Rendering 3",
         },
         {
           image:
-            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery/ext-1_Page_19.jpg",
-          alt: "Pavilion Rendering 2",
+            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery-2026/render-01.jpg",
+          alt: "Rendering 1",
         },
         {
           image:
-            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery/ext-1_Page_20.jpg",
-          alt: "Pavilion Rendering 3",
+            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery-2026/render-02.jpg",
+          alt: "Rendering 2",
         },
         {
           image:
-            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery/ext-1_Page_21.jpg",
-          alt: "Pavilion Rendering 3",
+            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery-2026/render-04.jpg",
+          alt: "Rendering 4",
         },
         {
           image:
-            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery/ext-1_Page_14.jpg",
-          alt: "Pavilion Rendering 3",
+            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery-2026/render-05-final.jpg",
+          alt: "Rendering 5",
         },
         {
           image:
-            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery/ext-1_Page_13.jpg",
-          alt: "Pavilion Rendering 3",
-        },
-        {
-          image:
-            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery/ext-1_Page_12.jpg",
-          alt: "Pavilion Rendering 3",
-        },
-        {
-          image:
-            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery/ext-1_Page_11.jpg",
-          alt: "Pavilion Rendering 3",
-        },
-        {
-          image:
-            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery/ext-1_Page_10.jpg",
-          alt: "Pavilion Rendering 3",
-        },
-        {
-          image:
-            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery/ext-1_Page_09.jpg",
-          alt: "Pavilion Rendering 3",
-        },
-        {
-          image:
-            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery/ext-1_Page_05.jpg",
-          alt: "Pavilion Rendering 3",
-        },
-        {
-          image:
-            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery/ext-1_Page_06.jpg",
-          alt: "Pavilion Rendering 3",
-        },
-        {
-          image:
-            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery/ext-1_Page_04.jpg",
-          alt: "Pavilion Rendering 3",
-        },
-        {
-          image:
-            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery/ext-1_Page_03.jpg",
-          alt: "Pavilion Rendering 3",
-        },
-        {
-          image:
-            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery/ext-1_Page_02.jpg",
-          alt: "Pavilion Rendering 3",
-        },
-        {
-          image:
-            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery/ext-1_Page_01.jpg",
-          alt: "Pavilion Rendering 3",
+            "https://tcnj.edu/custom/campaigns/new-pavilion-images/gallery-2026/render-06-final.jpg",
+          alt: "Rendering 6",
         },
       ]}
       client:load
     >
-      <div id="carousel-body">
+      <!-- <div id="carousel-body">
         <p>
           The space will feature a retractable, garage-like door and materials
           that blend with the environment while maintaining the signature look
           and feel of TCNJ’s campus.
-        </p>
-        <!-- <a class="button-link">Download TCNJ Pavilion Campaign Overview</a> -->
-      </div>
+        </p> -->
+      <!-- <a class="button-link">Download TCNJ Pavilion Campaign Overview</a> -->
+      <!-- </div> -->
     </CarouselContainer>
-    <GiveBanner scholarship={false} client:load>
-      <h2>Giving Opportunities</h2>
-      <p>
-        Please join the TCNJ community to help bring this creative vision to
-        life. Whether through an individual gift or a sponsorship, there are
-        numerous ways to lend your support to the creation of The Pavilion at
-        TCNJ. Naming opportunities will underwrite various aspects of
-        programming provided through The Pavilion at TCNJ, including but not
-        limited to recurring programs and initiatives, student organizations’
-        use of the space, lecture series and scholarly panels, visiting artists,
-        and scholar-in-residence fellowships.
-      </p>
-      <a class="button-link" href="https://give.tcnj.edu/invest-in-community/"
-        >Give Online</a
-      >
-      <!-- <Accodion
+  </main>
+  <GiveBanner scholarship={false} client:load>
+    <h2>Giving Opportunities</h2>
+    <p>
+      You can help bring this creative vision to life. Whether through an
+      individual gift or a sponsorship, there are numerous ways to lend your
+      support to the creation of TCNJ’s new Music Annex.
+    </p>
+    <a class="button-link" href="https://give.tcnj.edu/musicannex/"
+      >Give Online</a
+    >
+    <!-- <Accodion
         client:load
         idName="naming-opps"
         header="View the full list of naming opportunities"
@@ -187,7 +140,6 @@ import "@fontsource/open-sans";
       >
         <p>Content here</p>
       </Accodion> -->
-    </GiveBanner>
-    <Footer client:load />
-  </main>
+  </GiveBanner>
+  <Footer client:load />
 </Layout>

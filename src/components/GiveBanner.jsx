@@ -4,6 +4,16 @@ import { motion } from "framer-motion";
 const GiveBanner = ({ children, scholarship }) => {
   return (
     <div className="banner">
+      <img
+        src="/2026/lower-bounce.svg"
+        alt="bg image"
+        className="bounce"
+        id="lower-bounce"
+      />
+      <img
+        src="https://tcnj.edu/custom/campaigns/new-pavilion-images/hero-2026/blue-bg-full.jpg"
+        id="lower-bg-image"
+      />
       <motion.div
         className={`wrapper ${scholarship ? "scholarship" : ""}`}
         id="opportunties"

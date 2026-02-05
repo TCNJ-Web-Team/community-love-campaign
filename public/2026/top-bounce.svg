@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1871.75" height="196.453" viewBox="0 0 1871.75 196.453">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_63" data-name="Rectangle 63" width="1871.75" height="196.453" viewBox="0 0 1871.75 196.453" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Bounce" transform="translate(0 0)">
+    <g id="Group_136" data-name="Group 136" transform="translate(0 0)" clip-path="url(#clip-path)">
+      <path id="Path_1874" data-name="Path 1874" d="M1871.877,185.893H.064V11.861C336.588.708,935.4,176.307,935.4,176.307S1711.892-28.465,1871.877,11.861Z" transform="translate(0.102 10.559)" fill="#fff"/>
+      <path id="Path_1875" data-name="Path 1875" d="M1872,.01l-.018.008V0c-91.727,5.171-188.542,14.029-289.693,28.029-238.8,32.992-477.086,96.841-646.274,149.989h-.052c-169.184-53.148-407.494-117-646.272-149.989C188.513,14.029,91.7,5.171,0,0,.026,13.4.127,40.185.127,40.185,160.3,48.6,498.259,76.034,935.962,195.424v.026c.029,0,.029,0,.052-.026C1373.723,76.034,1711.679,48.6,1871.852,40.185V40.18H1872Z" transform="translate(0 -0.001)" fill="#fcd700"/>
+    </g>
+  </g>
+</svg>

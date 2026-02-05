@@ -1,5 +1,5 @@
 ---
-import Scholarship from "../pages/scholarship.astro";
+// import Scholarship from "../pages/scholarship.astro";
 interface Props {
   title: string;
   description?: string;
@@ -19,49 +19,26 @@ const {
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    {
-      !scholarship && (
-        <>
-          <link
-            rel="preload"
-            href="https://tcnj.edu/custom/campaigns/images/hero.jpg"
-            as="image"
-          />
-          <link
-            rel="preload"
-            href="https://tcnj.edu/custom/campaigns/images/walkthrough.png"
-            as="image"
-          />
-        </>
-      )
-    }
+
     <link
       rel="preload"
-      href="https://tcnj.edu/custom/campaigns/images/hero-bg.jpg"
+      href="https://tcnj.edu/custom/campaigns/new-pavilion-images/hero-2026/hero-final.jpg"
       as="image"
+      fetchpriority="high"
     />
+
     <link
+      rel="preload"
+      href="https://tcnj.edu/custom/campaigns/new-pavilion-images/hero-2026/blue-bg-full.jpg"
+      as="image"
+      fetchpriority="high"
+    />
+    <!-- <link
       rel="preload"
       href="https://tcnj.edu/custom/campaigns/images/yellow-bg-small.jpg"
       as="image"
-    />
-    {
-      scholarship && (
-        <>
-          <link
-            rel="preload"
-            href="https://tcnj.edu/custom/campaigns/images/hero-scholarship.jpg"
-            as="image"
-          />
+    /> -->
 
-          <link
-            rel="preload"
-            href="https://tcnj.edu/custom/campaigns/images/group.png"
-            as="image"
-          />
-        </>
-      )
-    }
     <meta
       http-equiv="Content-Security-Policy"
       content="upgrade-insecure-requests"
@@ -72,9 +49,11 @@ const {
     <link rel="icon" type="image/x-icon" href="https://tcnj.edu/favicon.ico" />
     <meta name="robots" content="index, follow" />
 
+    <link rel="stylesheet" href="https://use.typekit.net/mjf1ezf.css" />
     <meta
       property="og:image"
-      content={`https://tcnj.edu/custom/campaigns/images/` + image}
+      content={`https://tcnj.edu/custom/campaigns/new-pavilion-images/hero-2026/` +
+        image}
     />
     <!-- <meta name="generator" content={Astro.generator} /> -->
     <title>{title}</title>

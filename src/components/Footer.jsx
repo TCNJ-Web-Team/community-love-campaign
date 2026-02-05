@@ -17,13 +17,14 @@ export default function Footer() {
           &nbsp;<u>800.347.9621</u>
         </a> */}
         <strong>
-          For information on individual opportunities for support, please
-          contact Laura Smith,
-          <a href="mailto:laura.smith@tcnj.edu">
-            {" "}
-            <u>laura.smith@tcnj.edu</u>
-          </a>
+          For information on individual opportunities for support,{" "}
         </strong>
+        please contact Greg Schmidt, chief development officer and campaign
+        manager, at
+        <a href="mailto:schmidtg@tcnj.edu">
+          {" "}
+          <u>schmidtg@tcnj.edu</u>
+        </a>
         {/* <br />
         <br />{" "}
         <strong>
